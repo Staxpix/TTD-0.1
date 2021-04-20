@@ -1,0 +1,58 @@
+[
+    {
+        "id": "1",
+        "name": "Holger Osesek",
+        "status": "1. Vorsitzender",
+        "image": "holger1"
+    },
+    
+    {
+        "id": "2",
+        "name": "Oliver Plum",
+        "status": "Schwimm-Trainer und Ansprechpartner für alle angehende Langdistanzler",
+        "image": "oli"
+    },
+
+    {
+        "id": "3",
+        "name": "Heiko Lickfett",
+        "status": "Finanzvorstand",
+        "image": "holger1"
+    },
+
+    {
+        "id": "4",
+        "name": "Heike Hünchen",
+        "status": "Leiterin Sportbetrieb",
+        "image": "holger1"
+    },
+
+    {
+        "id": "5",
+        "name": "Jan Hofmann",
+        "status": "Kommunikation & Marketing",
+        "image": "holger1"
+    },
+
+    {
+        "id": "6",
+        "name": "Albert Florack",
+        "status": "Stellv. Kassenprüfer",
+        "image": "holger1"
+    },
+
+    {
+        "id": "7",
+        "name": "Michael Ochmann",
+        "status": "Leitung Leistungssport",
+        "image": "holger1"
+    }
+
+]
+
+
+
+
+
+
+
