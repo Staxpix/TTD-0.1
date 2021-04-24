@@ -31,6 +31,8 @@ struct SpotsList: View {
             .animation(Animation.linear(duration: 0.4))
             .animation(Animation.easeOut(duration: 0.5))
         }.navigationViewStyle(StackNavigationViewStyle())
+        .navigationBarHidden(true)
+        
         
    
         }

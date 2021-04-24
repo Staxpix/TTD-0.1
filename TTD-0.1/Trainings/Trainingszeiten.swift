@@ -136,7 +136,7 @@ struct TrainingDayCell: View {
                         .font(.headline)
                     Text(uhrzeit)
                 }
-                .padding()
+                .padding(8)
                 Divider()
                 VStack(spacing: 12) {
                     Text(ort)
@@ -150,17 +150,17 @@ struct TrainingDayCell: View {
                         })
                     
                 }
-                .padding()
+                .padding(8)
                 Divider()
                 Text(detail)
                     .font(.body)
                     .padding()
             }
-            .padding()
+            .padding(2)
             .multilineTextAlignment(.center)
             .font(.callout)
             .lineSpacing(8.0)
-            .padding()
+            .padding(8)
             .background((Color.ttdWhite))
             .cornerRadius(25)
             .shadow(color: Color.gray.opacity(0.5), radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/, x: 10, y: 10)

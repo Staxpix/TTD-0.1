@@ -71,7 +71,10 @@ struct PersonsViewFlipOverview: View {
                     }
                 }
             }
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarTitle("Trainer und APs")
         }.navigationViewStyle(StackNavigationViewStyle())
+        
     }
     
     struct PersonsViewFlipOverview_Previews: PreviewProvider {

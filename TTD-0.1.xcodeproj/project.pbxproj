@@ -152,6 +152,8 @@
 		78259FBF2623525E00D1568B /* Alt */ = {
 			isa = PBXGroup;
 			children = (
+				78023D312628E1F0001F2EB4 /* PencilKit */,
+				780B306E2622F1B300F1949E /* IPad Sidebar */,
 				783D0D0C262F5E7700EEC63C /* NewsListCell2.0.swift */,
 				780B30752623141800F1949E /* NewsListCellQuer.swift */,
 				780B30782623189500F1949E /* NewsListQuer.swift */,
@@ -187,8 +189,6 @@
 			isa = PBXGroup;
 			children = (
 				78D15C8F2631DEFA007020FE /* Spots */,
-				78023D312628E1F0001F2EB4 /* PencilKit */,
-				780B306E2622F1B300F1949E /* IPad Sidebar */,
 				7829D3BA2621AB4D003BFE0A /* Extensions */,
 				7829D39E2621A61F003BFE0A /* StartTabView */,
 				7829D39D2621A612003BFE0A /* Workout Planner */,
@@ -557,6 +557,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "staxpix.TTD-0-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -579,6 +580,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "staxpix.TTD-0-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
