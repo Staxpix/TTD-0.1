@@ -4,7 +4,7 @@
 //
 //  Created by Daniel Enning on 15.04.21.
 //
-
+// GitHubTest2
 import Foundation
 import CoreData
 
