@@ -75,7 +75,8 @@ struct HomeScreen: View {
             .opacity(isVisible ? 1.0 : 0.1)
             .onAppear(perform: {
                 withAnimation(.easeIn(duration: 1.5)) {
-                    self.isVisible.toggle()
+                    self.isVisible = true
+                
                     
                 }
             })

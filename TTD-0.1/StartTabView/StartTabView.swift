@@ -24,7 +24,7 @@ struct StartTabView: View {
                     Text("Home")
                 } }
 
-            NewsListQuer()
+            NewsList2_0()
                 .tabItem { VStack {
                     Image(systemName: "newspaper.fill")
                     Text("News")
@@ -42,11 +42,23 @@ struct StartTabView: View {
                     Text("Trainingszeiten")
                 }
 
-            PenilKit1()
+            SpotsList()
                 .tabItem { VStack {
-                    Image(systemName: "pencil.circle.fill")
-                    Text("Notizen")
+                    Image(systemName: "paperplane.circle.fill")
+                    Text("Spots")
                 } }
+            
+            SpotsMapView()
+                .tabItem { VStack {
+                    Image(systemName: "mappin.circle.fill")
+                    Text("Spots Map")
+                } }
+            
+//            PenilKit1()
+//                .tabItem { VStack {
+//                    Image(systemName: "pencil.circle.fill")
+//                    Text("Notizen")
+//                } }
 //
 //            LoginView()
 //                .tabItem { VStack {

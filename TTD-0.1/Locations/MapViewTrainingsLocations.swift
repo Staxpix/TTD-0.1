@@ -12,6 +12,8 @@ import UIKit
 
 struct MapViewTrainingsLocations: View {
     
+    let spots : [Spots] = Bundle.main.decode("Spots.json")
+    
     private var locations = [
         Locations(name: "Rheinbad", coordinate: .init(latitude: 51.264654, longitude: 6.733010)),
         Locations(name: "Flatiron Building", coordinate: .init(latitude: 40.741112, longitude: -73.989723)),
@@ -37,7 +39,7 @@ struct MapViewTrainingsLocations: View {
                 
                 MapAnnotation(coordinate: item.coordinate)
                 {
-                    MapAnnotationView()
+                    MapAnnotationView(spotName: item.name)
                         
                 }
             }

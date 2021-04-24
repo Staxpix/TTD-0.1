@@ -35,10 +35,10 @@ struct NewsListCell2_0: View {
                     .resizable()
                     .scaledToFit()
                     .cornerRadius(25)
-//                    .frame(maxWidth: screenSize.width * 0.5, maxHeight: screenSize.height * 0.4, alignment: .center)
+                    .frame(maxWidth: screenSize.width * 0.5, maxHeight: screenSize.height * 0.4, alignment: .center)
                     .clipShape(RoundedRectangle(cornerRadius: 25.0))
                     .shadow(color: Color.gray.opacity(0.7), radius: 15, x: 10, y: 10)
-                    .shadow(color: Color.gray.opacity(0.2), radius: 15, x: -4, y: -4)
+                    .shadow(color: Color.gray.opacity(0.2), radius: 15, x: -10, y: -10)
                     .padding()
                 
                 
@@ -70,7 +70,7 @@ struct NewsListCell2_0: View {
                 
                 
             }.padding(12)
-            .frame(maxWidth: screenSize.width * 0.8, maxHeight: screenSize.height * 0.6, alignment: .center)
+            .frame(minWidth: screenSize.width * 0.8,  maxWidth: screenSize.width * 0.8, maxHeight: screenSize.height * 0.6, alignment: .center)
             .background(Color.ttdWhite)
             .cornerRadius(25)
             .shadow(color: Color.gray.opacity(0.3), radius: 10, x: 10, y: 10)
