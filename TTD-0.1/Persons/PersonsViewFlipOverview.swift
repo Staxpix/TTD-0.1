@@ -36,7 +36,11 @@ struct PersonsViewFlipOverview: View {
                         ScrollView(.horizontal, showsIndicators: false) {
                             
                             HStack {
-                                CardOliPlum()
+                                
+                                CardOliPlum(name: persons[1].name, status: persons[1].status, image: persons[1].image
+                                )
+                                
+                                CardOliPlum(name: persons[2].name, status: persons[2].status, image: persons[2].image)
                                 
                                 CardIngmar()
                                 
@@ -59,7 +63,7 @@ struct PersonsViewFlipOverview: View {
                         ScrollView(.horizontal, showsIndicators: false) {
                             
                             HStack {
-                                CardOliPlum()
+                                CardOliPlum(name: persons[3].name, status: persons[3].status, image: persons[3].image)
                                 
                                 CardIngmar()
                                 
@@ -87,12 +91,17 @@ struct PersonsViewFlipOverview: View {
 struct CardOliPlum: View {
     @State var degrees: Double = 1
     @State var isFlipped: Bool = true
+    
+    var name : String
+    var status : String
+    var image : String
+    
     var body: some View {
         VStack {
             VStack {
                 Group {
                     if isFlipped {
-                        PersonsCardView(name: "oli vorderseite", status: "fjdalsöal", image: "oli")
+                        PersonsCardView(name: name, status: status, image: image)
                         
                     } else {
                         PersonsCardBackView()

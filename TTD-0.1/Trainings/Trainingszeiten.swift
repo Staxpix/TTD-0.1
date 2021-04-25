@@ -30,6 +30,7 @@ struct Trainingszeiten: View {
                             
                            
                             
+                            
                                 TrainingDayCell(tag: "Montag", uhrzeit: "16:00 - 17:00 Uhr", ort: "Rheinbad 50", detail: "Leistungsstärke III (1:30-1:45) IV(1:45-2:00) & V(>2:00)")
                                 
                                 TrainingDayCell(tag: "Montag", uhrzeit: "16:00 - 17:00 Uhr", ort: "Rheinbad 50", detail: "Leistungsstärke III (1:30-1:45) IV(1:45-2:00) & V(>2:00)")
@@ -56,6 +57,9 @@ struct Trainingszeiten: View {
                                     .font(.title3)
                                     .fontWeight(.heavy)
                                     .padding()
+                            
+                        
+                            
                                 TrainingDayCell(tag: "Montag", uhrzeit: "16:00 - 17:00 Uhr", ort: "Rheinbad 50", detail: "Leistungsstärke III (1:30-1:45) IV(1:45-2:00) & V(>2:00)")
                                 
                                 TrainingDayCell(tag: "Montag", uhrzeit: "16:00 - 17:00 Uhr", ort: "Rheinbad 50", detail: "Leistungsstärke III (1:30-1:45) IV(1:45-2:00) & V(>2:00)")
@@ -82,6 +86,9 @@ struct Trainingszeiten: View {
                                     .font(.title3)
                                     .fontWeight(.heavy)
                                     .padding()
+                            
+                            
+                            
                                 TrainingDayCell(tag: "Montag", uhrzeit: "16:00 - 17:00 Uhr", ort: "Rheinbad 50", detail: "Leistungsstärke III (1:30-1:45) IV(1:45-2:00) & V(>2:00)")
                                 
                                 TrainingDayCell(tag: "Montag", uhrzeit: "16:00 - 17:00 Uhr", ort: "Rheinbad 50", detail: "Leistungsstärke III (1:30-1:45) IV(1:45-2:00) & V(>2:00)")
@@ -141,6 +148,8 @@ struct TrainingDayCell: View {
                 VStack(spacing: 12) {
                     Text(ort)
                         .font(.headline)
+                    
+                   
              
                     NavigationLink(
                         destination: MapViewTrainingsLocations(),
@@ -167,5 +176,39 @@ struct TrainingDayCell: View {
             
         } // Montag
         .padding(.horizontal, 22)
+    }
+}
+
+struct TrainingDayCellBack: View {
+    
+    var tag: String = ""
+    var uhrzeit: String = ""
+    var ort: String = ""
+    var detail: String = ""
+    
+    var body: some View {
+        VStack { // Montag
+            
+             
+                    NavigationLink(
+                        destination: MapViewTrainingsLocations(),
+                        label: {
+                            VStack {
+                                
+                                MapViewTrainingsLocations()
+                                    .frame(height: 200)
+                                
+                                Image(systemName: "map")
+                                    .foregroundColor(.accentColor)
+                            }
+                        })
+                    
+                }
+                .padding(8)
+                Divider()
+                Text(detail)
+                    .font(.body)
+                    .padding()
+            
     }
 }

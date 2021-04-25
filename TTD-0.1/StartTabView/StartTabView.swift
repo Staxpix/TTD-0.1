@@ -36,7 +36,13 @@ struct StartTabView: View {
                     Text("Trainer")
                 } }
             
-            Trainingszeiten()
+//            Trainingszeiten()
+//                .tabItem {
+//                    Image(systemName: "clock.fill")
+//                    Text("Trainingszeiten")
+//                }
+            
+            TrainingDayFlipCell()
                 .tabItem {
                     Image(systemName: "clock.fill")
                     Text("Trainingszeiten")
