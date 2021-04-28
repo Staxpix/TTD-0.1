@@ -52,6 +52,8 @@
 		788624C426398026002AFAA1 /* LazyTrainingOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788624C326398026002AFAA1 /* LazyTrainingOverview.swift */; };
 		788715802621ED2700511DEF /* NewsListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7887157F2621ED2700511DEF /* NewsListCell.swift */; };
 		78A6ECA02639D2340034E2B8 /* WorkOutTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A6EC9F2639D2340034E2B8 /* WorkOutTest.swift */; };
+		78A6ECA32639E4460034E2B8 /* EasyRun.json in Resources */ = {isa = PBXBuildFile; fileRef = 78A6ECA22639E4460034E2B8 /* EasyRun.json */; };
+		78A6ECAA2639E4AE0034E2B8 /* runEasyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A6ECA92639E4AE0034E2B8 /* runEasyModel.swift */; };
 		78B1273926359C8500D69CA7 /* TrainingDayFlipCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B1273826359C8500D69CA7 /* TrainingDayFlipCell.swift */; };
 		78BE7CE2262B475F00072218 /* NewsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BE7CE1262B475F00072218 /* NewsDetailView.swift */; };
 		78C1B72C2631EA7500261AE7 /* SpotsListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C1B72B2631EA7500261AE7 /* SpotsListCell.swift */; };
@@ -114,6 +116,8 @@
 		788624C326398026002AFAA1 /* LazyTrainingOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyTrainingOverview.swift; sourceTree = "<group>"; };
 		7887157F2621ED2700511DEF /* NewsListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListCell.swift; sourceTree = "<group>"; };
 		78A6EC9F2639D2340034E2B8 /* WorkOutTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkOutTest.swift; sourceTree = "<group>"; };
+		78A6ECA22639E4460034E2B8 /* EasyRun.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = EasyRun.json; sourceTree = "<group>"; };
+		78A6ECA92639E4AE0034E2B8 /* runEasyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = runEasyModel.swift; sourceTree = "<group>"; };
 		78B1273826359C8500D69CA7 /* TrainingDayFlipCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingDayFlipCell.swift; sourceTree = "<group>"; };
 		78BE7CE1262B475F00072218 /* NewsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailView.swift; sourceTree = "<group>"; };
 		78C1B72B2631EA7500261AE7 /* SpotsListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotsListCell.swift; sourceTree = "<group>"; };
@@ -235,12 +239,14 @@
 		7829D3982621A5CF003BFE0A /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				78A6ECA22639E4460034E2B8 /* EasyRun.json */,
 				7829D3A12621A64A003BFE0A /* DecodeJSON.swift */,
 				7829D39F2621A64A003BFE0A /* Persons.json */,
 				78C1B7302631F3CB00261AE7 /* Spots.json */,
 				7829D3A32621A64A003BFE0A /* PersonsModel.swift */,
 				78709D972626157000F73722 /* NewsModelOnline.swift */,
 				78D15C932631E021007020FE /* SpotsModel.swift */,
+				78A6ECA92639E4AE0034E2B8 /* runEasyModel.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -392,6 +398,7 @@
 				7829D3902621A5C5003BFE0A /* Preview Assets.xcassets in Resources */,
 				7829D38D2621A5C5003BFE0A /* Assets.xcassets in Resources */,
 				78C1B7312631F3CB00261AE7 /* Spots.json in Resources */,
+				78A6ECA32639E4460034E2B8 /* EasyRun.json in Resources */,
 				7829D3A72621A64A003BFE0A /* News.json in Resources */,
 				7829D3A42621A64A003BFE0A /* Persons.json in Resources */,
 			);
@@ -444,6 +451,7 @@
 				78023D3E2628E202001F2EB4 /* CoreDataManagerPK.swift in Sources */,
 				7829D3AB2621A6E3003BFE0A /* StartTabView.swift in Sources */,
 				78A6ECA02639D2340034E2B8 /* WorkOutTest.swift in Sources */,
+				78A6ECAA2639E4AE0034E2B8 /* runEasyModel.swift in Sources */,
 				7829D3BC2621AB63003BFE0A /* ColorExtension.swift in Sources */,
 				78709D982626157000F73722 /* NewsModelOnline.swift in Sources */,
 				78023D3D2628E202001F2EB4 /* DrawingViewController.swift in Sources */,

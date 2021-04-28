@@ -1,0 +1,45 @@
+[
+    {
+        "id": "1",
+
+				"workoutName": "400m Tempo locker \n 2km: Easy mit Lauf-ABC \n 5km: Alle 400m für 10 Sekunden leichte Tempoerhöhung \n 3km: Locker auslaufen",
+
+				"warmup": "2km: Easy mit Lauf-ABC",
+
+				"main": "5km: Alle 400m für 10 Sekunden leichte Tempoerhöhung",
+
+				"cooldown": "3km: Locker auslaufen"
+
+
+    },
+    {
+        "id": "2",
+
+				"workoutName": "Bahntraining: 200m on/off",
+
+				"warmup": "15 Minuten intensives Lauf-ABC",
+
+				"main": "Auf der Bahn: 4 Runden locker einlaufen -> 10 x 200m on/off: Off = GA1 // ON = 15 Sekunden/km schneller",
+
+				"cooldown": "5 Runden locker auslaufen"
+    },
+    
+
+    {
+        "id": "3",
+
+				"workoutName": "GA1 Geländelauf",
+
+				"warmup": "Intensives Dehnen + 2km einlaufen",
+
+				"main": "45 Grundlagenlauf im Gelände / Wald",
+
+				"cooldown": "leichtes(!) Dehnen"
+    }
+]
+
+
+
+
+
+
