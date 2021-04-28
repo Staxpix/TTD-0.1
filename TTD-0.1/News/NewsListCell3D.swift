@@ -22,7 +22,7 @@ struct NewsListCell3D: View {
         
         
             
-            HStack(alignment: .center ,spacing: 10){
+            VStack(alignment: .center ,spacing: 10){
                 
                 Image(uiImage: image.load())
                     .resizable()
@@ -32,7 +32,7 @@ struct NewsListCell3D: View {
                         .degrees(20),
                         axis: (x: 1.0, y: 1.0, z: 0.0)
                         
-                    ).padding(.leading, 10)
+                    ).padding(.top, 10)
                     .frame(maxWidth: screenSize.width * 0.5, maxHeight: screenSize.height * 0.2, alignment: .center)
                     .clipShape(RoundedRectangle(cornerRadius: 25.0))
                     .shadow(color: Color.gray.opacity(0.7), radius: 15, x: 10, y: 10)
@@ -66,7 +66,7 @@ struct NewsListCell3D: View {
                     
                     
                 }// V
-                .frame(minWidth: screenSize.width * 0.4,  maxWidth: screenSize.width * 0.4, maxHeight: screenSize.height * 0.45, alignment: .center)
+                .frame(minWidth: screenSize.width * 0.4,  maxWidth: screenSize.width * 0.6, maxHeight: screenSize.height * 0.45, alignment: .center)
                 
                 
                 

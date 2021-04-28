@@ -53,47 +53,6 @@ struct MapViewTrainingsLocations: View {
 
 
 
-struct MapViewTrainingsLocationsTHB: View {
-    
-    let spots : [Spots] = Bundle.main.decode("Spots.json")
-    
-    private var locations = [
-        Locations(name: "THB", coordinate: .init(latitude: 51.248564, longitude: 6.762270))
-        ]
-    
-    @State private var region: MKCoordinateRegion = {
-        var mapCoordinates = CLLocationCoordinate2D(latitude: 51.264654, longitude: 6.733010)
-        var mapZoomLevel = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
-        var mapRegion = MKCoordinateRegion(center: mapCoordinates, span: mapZoomLevel)
-        return mapRegion
-        
-    }()
-    
-    
-    
-    var body: some View {
-        
-//        Map(coordinateRegion: $region, interactionModes: .all, showsUserLocation: true)
-        
-        NavigationView {
-            Map(coordinateRegion: $region, annotationItems: locations) { item in
-                
-                MapAnnotation(coordinate: item.coordinate)
-                {
-                    MapAnnotationView(spotName: item.name)
-                        
-                }
-            }
-            .edgesIgnoringSafeArea(.all)
-        }.navigationViewStyle(StackNavigationViewStyle())
-            
-            
-        
-    }
-}
-
-
-
 struct Locations: Identifiable {
     let id = UUID()
     var name: String

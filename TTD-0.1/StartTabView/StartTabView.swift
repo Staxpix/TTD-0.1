@@ -24,7 +24,7 @@ struct StartTabView: View {
                     Text("Home")
                 } }
 
-            NewsList2_0()
+            NewsListLazy()
                 .tabItem { VStack {
                     Image(systemName: "newspaper.fill")
                     Text("News")
@@ -42,7 +42,7 @@ struct StartTabView: View {
 //                    Text("Trainingszeiten")
 //                }
             
-            TrainingDayFlipCell()
+            LazyTrainingOverview()
                 .tabItem {
                     Image(systemName: "clock.fill")
                     Text("Trainingszeiten")

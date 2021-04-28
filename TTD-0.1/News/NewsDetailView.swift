@@ -38,6 +38,7 @@ struct NewsDetailView: View {
                             .shadow(color: Color.gray.opacity(0.7), radius: 10, x: 10, y: 10)
                             .shadow(color: Color.gray.opacity(0.2), radius: 10, x: -2, y: -2)
                             .padding(.horizontal, 60)
+                            .frame(maxWidth: screenSize.width * 0.8)
                             
                         
                         HStack {
@@ -69,7 +70,7 @@ struct NewsDetailView: View {
                             
                             
                             
-                            Link("TTD Homepage", destination: (URL(string: linkHomepage) ?? URL(string: "https://wikipedia.org"))!)
+                            Link("TTD Homepage", destination: (URL(string: linkHomepage) ?? URL(string: "https://triathlon-team-duesseldorf.com"))!)
                             
                         
                         }

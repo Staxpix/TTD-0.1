@@ -11,7 +11,7 @@ import SwiftUI
 struct TTD_0_1App: App {
     var body: some Scene {
         WindowGroup {
-            StartTabView()
+            WorkOutTest()
         }
     }
 }
