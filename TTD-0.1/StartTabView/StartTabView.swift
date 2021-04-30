@@ -36,6 +36,8 @@ struct StartTabView: View {
                     Text("Trainer")
                 } }
             
+    
+            
 //            Trainingszeiten()
 //                .tabItem {
 //                    Image(systemName: "clock.fill")
@@ -59,6 +61,14 @@ struct StartTabView: View {
                     Image(systemName: "mappin.circle.fill")
                     Text("Spots Map")
                 } }
+            
+            WorkOutTest()
+                .tabItem {
+                    VStack {
+                        Image(systemName: "chart.bar.doc.horizontal.fill")
+                        Text("Workout Planner")
+                    }
+                }
             
 //            PenilKit1()
 //                .tabItem { VStack {

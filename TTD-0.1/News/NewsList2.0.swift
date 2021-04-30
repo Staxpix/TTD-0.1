@@ -38,6 +38,13 @@ struct NewsList2_0: View {
             .listStyle(PlainListStyle())
             .navigationBarTitle("TTD News")
             .navigationBarTitleDisplayMode(.inline)
+            .navigationBarItems(trailing: Button(action: {
+                apiCall().getNewsOnline { (newsOnline) in
+                    self.newsOnline = newsOnline
+                }
+            }, label: {
+                Text("Refresh")
+            }))
             .animation(Animation.linear(duration: 0.4))
             .animation(Animation.easeOut(duration: 0.5))
         }

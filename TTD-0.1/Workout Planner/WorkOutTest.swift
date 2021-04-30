@@ -22,7 +22,7 @@ struct WorkOutTest: View {
     var body: some View {
         
         
-        VStack(spacing: 100) {
+        VStack(spacing: 40) {
             Picker(selection: $selectRun, label: Text(""), content: {
                 ForEach(0..<auswahlRun.count) {
                     Text(auswahlRun[$0])
@@ -75,7 +75,7 @@ struct WorkOutTest: View {
             
             
             
-        }
+        }.frame(maxHeight: 400)
     }
 }
 

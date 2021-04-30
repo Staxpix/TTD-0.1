@@ -3,7 +3,7 @@
         "id": "1",
         "name": "Holger Osesek",
         "status": "1. Vorsitzender",
-        "image": "holger1"
+        "image": "holger"
     },
     
     {
@@ -17,36 +17,87 @@
         "id": "3",
         "name": "Heiko Lickfett",
         "status": "Finanzvorstand",
-        "image": "holger1"
+        "image": "heiko"
     },
 
     {
         "id": "4",
         "name": "Heike Hünchen",
         "status": "Leiterin Sportbetrieb",
-        "image": "holger1"
+        "image": "heike"
     },
 
     {
         "id": "5",
         "name": "Jan Hofmann",
         "status": "Kommunikation & Marketing",
-        "image": "holger1"
+        "image": "jan"
     },
 
     {
         "id": "6",
         "name": "Albert Florack",
         "status": "Stellv. Kassenprüfer",
-        "image": "holger1"
+        "image": "albert"
     },
 
     {
         "id": "7",
         "name": "Michael Ochmann",
         "status": "Leitung Leistungssport",
-        "image": "holger1"
+        "image": "michi"
+    },
+    
+    {
+        "id": "8",
+        "name": "Ingmar Klusman",
+        "status": "Leitung Leistungssport",
+        "image": "ingmar"
+    },
+    
+    {
+        "id": "9",
+        "name": "Alex Jasch",
+        "status": "Leitung Leistungssport",
+        "image": "alex"
+    },
+    
+    {
+        "id": "10",
+        "name": "Jens Raspe",
+        "status": "Leitung Leistungssport",
+        "image": "Jens"
+    },
+    
+    {
+        "id": "11",
+        "name": "Kathy Manno",
+        "status": "Leitung Leistungssport",
+        "image": "kathy"
+    },
+    
+    {
+        "id": "12",
+        "name": "Karin Hörmann",
+        "status": "Leitung Leistungssport",
+        "image": "karin"
+    },
+    
+    {
+        "id": "13",
+        "name": "Kea Klusmann",
+        "status": "Leitung Leistungssport",
+        "image": "kea"
+    },
+    
+    {
+        "id": "14",
+        "name": "Stefan Gartner",
+        "status": "Leitung Leistungssport",
+        "image": "kea"
     }
+    
+    
 
 ]
 

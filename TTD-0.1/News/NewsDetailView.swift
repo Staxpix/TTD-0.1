@@ -35,6 +35,11 @@ struct NewsDetailView: View {
                             .resizable()
                             .scaledToFit()
                             .cornerRadius(25)
+                            .rotation3DEffect(
+                                .degrees(20),
+                                axis: (x: 0.5, y: 0.0, z: 0.0)
+                                
+                            ).padding(.top, 10)
                             .shadow(color: Color.gray.opacity(0.7), radius: 10, x: 10, y: 10)
                             .shadow(color: Color.gray.opacity(0.2), radius: 10, x: -2, y: -2)
                             .padding(.horizontal, 60)

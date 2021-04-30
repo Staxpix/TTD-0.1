@@ -113,7 +113,7 @@ struct TrainingCardFrontTHB: View {
             
         } // Montag
         .padding(.horizontal, 22)
-        .frame(width: 300, height: 350, alignment: .center)
+        .frame(width: 330, height: 350, alignment: .center)
     }
 }
 
@@ -130,7 +130,7 @@ struct TrainingCardBackTHB: View {
         .background((Color.ttdWhite))
         .cornerRadius(25)
         .shadow(color: Color.gray.opacity(0.5), radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/, x: 10, y: 10)
-        .frame(width: 300, height: 350, alignment: .center)
+        .frame(width: 330, height: 350, alignment: .center)
         .rotation3DEffect(
             .degrees(180),
             axis: (x: 0.0, y: 1.0, z: 0.0)

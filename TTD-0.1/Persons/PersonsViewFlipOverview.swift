@@ -15,6 +15,8 @@ struct PersonsViewFlipOverview: View {
     @State var degrees: Double = 1
     @State var isFlipped: Bool = true
     
+    private let gridItems = [GridItem(.flexible(minimum: 360, maximum: 380)), GridItem(.flexible(minimum: 360, maximum: 380)), GridItem(.flexible(minimum: 360, maximum: 380)), GridItem(.flexible(minimum: 360, maximum: 380))]
+    
     var body: some View {
         
         
@@ -33,19 +35,16 @@ struct PersonsViewFlipOverview: View {
                             .offset(y: 0)
                             .animation(Animation.easeInOut(duration: 0.6).delay(0.2))
                         
+                        Text("Der Vorstand")
+                            .font(.title2)
+                        
                         ScrollView(.horizontal, showsIndicators: false) {
                             
-                            HStack {
-                                
-                                PersonFlipCard(name: persons[1].name, status: persons[1].status, image: persons[1].image
-                                )
-                                
-                                PersonFlipCard(name: persons[2].name, status: persons[2].status, image: persons[2].image)
-                                
-                                CardIngmar()
-                                
-                                CardKea()
-                            }.padding(.leading, 30)
+                            LazyVGrid(columns: gridItems, spacing: 16, content: {
+                                ForEach(persons[0...6], id: \.id) { persons in
+                                    PersonFlipCard(name: persons.name, status: persons.status, image: persons.image)
+                                }.padding(.leading, 30)
+                            })
                         }
                         .animation(.interpolatingSpring(mass: 1.0, stiffness: 100.0, damping: 10, initialVelocity: 1))
                         .animation(Animation.spring(response: 0.6, dampingFraction: 0.6, blendDuration: 3))
@@ -60,15 +59,16 @@ struct PersonsViewFlipOverview: View {
                             .offset(y: 0)
                             .animation(Animation.easeInOut(duration: 0.6).delay(0.2))
                         
+                        Text("Unser Trainer-Team")
+                            .font(.title2)
+                        
                         ScrollView(.horizontal, showsIndicators: false) {
                             
-                            HStack {
-                                PersonFlipCard(name: persons[3].name, status: persons[3].status, image: persons[3].image)
-                                
-                                CardIngmar()
-                                
-                                CardKea()
-                            }.padding(.leading, 30)
+                            LazyVGrid(columns: gridItems, spacing: 16, content: {
+                                ForEach(persons[7...13], id: \.id) { persons in
+                                    PersonFlipCard(name: persons.name, status: persons.status, image: persons.image)
+                                }.padding(.leading, 30)
+                            })
                         }
                         .animation(.interpolatingSpring(mass: 1.0, stiffness: 100.0, damping: 10, initialVelocity: 1))
                         .animation(Animation.spring(response: 0.6, dampingFraction: 0.6, blendDuration: 3))
@@ -104,7 +104,7 @@ struct PersonFlipCard: View {
                         PersonsCardView(name: name, status: status, image: image)
                         
                     } else {
-                        PersonsCardBackView()
+                        PersonsCardBackView(name: name, status: status, image: image)
                         
                     }
                 }
@@ -127,71 +127,71 @@ struct PersonFlipCard: View {
     }
 }
 
-struct CardIngmar: View {
-    @State var degrees: Double = 1
-    @State var isFlipped: Bool = true
-    var body: some View {
-        VStack {
-            VStack {
-                Group {
-                    if isFlipped {
-                        PersonsCardView(name: "oli vorderseite", status: "fjdalsöal", image: "ingmar")
-                        
-                    } else {
-                        PersonsCardBackView()
-                        
-                    }
-                }
-                
-            }.rotation3DEffect(
-                .degrees(degrees),
-                axis: (x: 0.0, y: 1.0, z: 0.0)
-                
-            )
-        }.onTapGesture {
-            withAnimation(.easeIn(duration: 0.3)){
-                
-                degrees += 180
-                isFlipped.toggle()
-                
-            }
-            
-            
-        }.navigationViewStyle(StackNavigationViewStyle())
-    }
-}
-
-struct CardKea: View {
-    @State var degrees: Double = 1
-    @State var isFlipped: Bool = true
-    var body: some View {
-        VStack {
-            VStack {
-                Group {
-                    if isFlipped {
-                        PersonsCardView(name: "oli vorderseite", status: "fjdalsöal", image: "kea")
-                        
-                    } else {
-                        PersonsCardBackView()
-                        
-                    }
-                }
-                
-            }.rotation3DEffect(
-                .degrees(degrees),
-                axis: (x: 0.0, y: 1.0, z: 0.0)
-                
-            )
-        }.onTapGesture {
-            withAnimation(.easeIn(duration: 0.3)){
-                
-                degrees += 180
-                isFlipped.toggle()
-                
-            }
-            
-            
-        }.navigationViewStyle(StackNavigationViewStyle())
-    }
-}
+//struct CardIngmar: View {
+//    @State var degrees: Double = 1
+//    @State var isFlipped: Bool = true
+//    var body: some View {
+//        VStack {
+//            VStack {
+//                Group {
+//                    if isFlipped {
+//                        PersonsCardView(name: "oli vorderseite", status: "fjdalsöal", image: "ingmar")
+//
+//                    } else {
+//                        PersonsCardBackView()
+//
+//                    }
+//                }
+//
+//            }.rotation3DEffect(
+//                .degrees(degrees),
+//                axis: (x: 0.0, y: 1.0, z: 0.0)
+//
+//            )
+//        }.onTapGesture {
+//            withAnimation(.easeIn(duration: 0.3)){
+//
+//                degrees += 180
+//                isFlipped.toggle()
+//
+//            }
+//
+//
+//        }.navigationViewStyle(StackNavigationViewStyle())
+//    }
+//}
+//
+//struct CardKea: View {
+//    @State var degrees: Double = 1
+//    @State var isFlipped: Bool = true
+//    var body: some View {
+//        VStack {
+//            VStack {
+//                Group {
+//                    if isFlipped {
+//                        PersonsCardView(name: "oli vorderseite", status: "fjdalsöal", image: "kea")
+//
+//                    } else {
+//                        PersonsCardBackView()
+//
+//                    }
+//                }
+//
+//            }.rotation3DEffect(
+//                .degrees(degrees),
+//                axis: (x: 0.0, y: 1.0, z: 0.0)
+//
+//            )
+//        }.onTapGesture {
+//            withAnimation(.easeIn(duration: 0.3)){
+//
+//                degrees += 180
+//                isFlipped.toggle()
+//
+//            }
+//
+//
+//        }.navigationViewStyle(StackNavigationViewStyle())
+//    }
+//}
 

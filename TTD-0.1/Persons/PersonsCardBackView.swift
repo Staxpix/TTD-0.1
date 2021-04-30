@@ -9,9 +9,9 @@ import SwiftUI
 
 struct PersonsCardBackView: View {
     
-    let name: String = "Oliver Plum"
-     let status: String = "jfdalö jd fjdkaö fdas fdajklö fdaskjöfa fdjj fdjalö fdalö jd fjdkaö fdas fdajklö fdaskjöfa fdjj fdjalö fdalö jd fjdkaö fdas fdajklö fdaskjöfa fdjj fdjalö fdalö jd fjdkaö fdas fdajklö fdaskjöfa fdjj fdjalöf  fjdkaö fdajklö f jdlaö fjdkaösf jkdaösl fsjlö sö"
-     let image: String = "oli"
+    let name: String
+     let status: String
+     let image: String
     
     var screenSize = UIScreen.main.bounds
     
@@ -83,6 +83,6 @@ struct PersonsCardBackView: View {
 
 struct PersonsCardBackView_Previews: PreviewProvider {
     static var previews: some View {
-        PersonsCardBackView()
+        PersonsCardBackView(name: "", status: "", image: "")
     }
 }

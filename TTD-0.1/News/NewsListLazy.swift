@@ -45,8 +45,16 @@ struct NewsListLazy: View {
                     })
                 }
             
-            .navigationTitle("Das TTD-Team")
+            .navigationTitle("TTD News")
             .navigationBarTitleDisplayMode(.inline)
+                .navigationBarItems(trailing: Button(action: {
+                    apiCall().getNewsOnline { (newsOnline) in
+                        self.newsOnline = newsOnline
+                    }
+                }, label: {
+                    Text("Refresh")
+                }))
+
         }
         .navigationViewStyle(StackNavigationViewStyle())
         .onAppear {
