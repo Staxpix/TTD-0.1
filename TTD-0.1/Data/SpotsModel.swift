@@ -19,6 +19,7 @@ struct Spots: Codable, Identifiable {
     var latitude: Double
     var longitude: Double
     var text: String
+    var gallery: [String]
     
     var locationsSpots: CLLocationCoordinate2D {
         CLLocationCoordinate2D(latitude: latitude, longitude: longitude)

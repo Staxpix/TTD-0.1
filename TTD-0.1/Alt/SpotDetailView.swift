@@ -10,7 +10,8 @@ import MapKit
 
 struct SpotDetailView: View {
     
-    var spots : [Spots] = Bundle.main.decode("Spots.json")
+    let spots : [Spots] = Bundle.main.decode("Spots.json")
+    
     
     var id: Int
     var headline: String
@@ -51,39 +52,42 @@ struct SpotDetailView: View {
                 
                 ScrollView(.horizontal) {
                     HStack(spacing: 30) {
-                        Image(image)
-                            .resizable()
-                            .scaledToFit()
-                            .clipShape(RoundedRectangle(cornerRadius: 25.0))
-                            .shadow(color: Color.gray.opacity(0.3), radius: 10, x: 10, y: 10)
-                            .shadow(color: Color.gray.opacity(0.1), radius: 10, x: -2, y: -2)
-                            .rotation3DEffect(
-                                .degrees(10),
-                                axis: (x: 1.0, y: 1.0, z: 0.0)
-                                )
-                            .padding(10)
-                        Image(image)
-                            .resizable()
-                            .scaledToFit()
-                            .clipShape(RoundedRectangle(cornerRadius: 25.0))
-                            .shadow(color: Color.gray.opacity(0.3), radius: 10, x: 10, y: 10)
-                            .shadow(color: Color.gray.opacity(0.1), radius: 10, x: -2, y: -2)
-                            .rotation3DEffect(
-                                .degrees(10),
-                                axis: (x: 1.0, y: 1.0, z: 0.0)
-                                )
-                            .padding(10)
-                        Image(image)
-                            .resizable()
-                            .scaledToFit()
-                            .clipShape(RoundedRectangle(cornerRadius: 25.0))
-                            .shadow(color: Color.gray.opacity(0.3), radius: 10, x: 10, y: 10)
-                            .shadow(color: Color.gray.opacity(0.1), radius: 10, x: -2, y: -2)
-                            .rotation3DEffect(
-                                .degrees(10),
-                                axis: (x: 1.0, y: 1.0, z: 0.0)
-                                )
-                            .padding(10)
+                        
+                       
+                        
+//                        Image(image)
+//                            .resizable()
+//                            .scaledToFit()
+//                            .clipShape(RoundedRectangle(cornerRadius: 25.0))
+//                            .shadow(color: Color.gray.opacity(0.3), radius: 10, x: 10, y: 10)
+//                            .shadow(color: Color.gray.opacity(0.1), radius: 10, x: -2, y: -2)
+//                            .rotation3DEffect(
+//                                .degrees(10),
+//                                axis: (x: 1.0, y: 1.0, z: 0.0)
+//                                )
+//                            .padding(10)
+//                        Image(image)
+//                            .resizable()
+//                            .scaledToFit()
+//                            .clipShape(RoundedRectangle(cornerRadius: 25.0))
+//                            .shadow(color: Color.gray.opacity(0.3), radius: 10, x: 10, y: 10)
+//                            .shadow(color: Color.gray.opacity(0.1), radius: 10, x: -2, y: -2)
+//                            .rotation3DEffect(
+//                                .degrees(10),
+//                                axis: (x: 1.0, y: 1.0, z: 0.0)
+//                                )
+//                            .padding(10)
+//                        Image(image)
+//                            .resizable()
+//                            .scaledToFit()
+//                            .clipShape(RoundedRectangle(cornerRadius: 25.0))
+//                            .shadow(color: Color.gray.opacity(0.3), radius: 10, x: 10, y: 10)
+//                            .shadow(color: Color.gray.opacity(0.1), radius: 10, x: -2, y: -2)
+//                            .rotation3DEffect(
+//                                .degrees(10),
+//                                axis: (x: 1.0, y: 1.0, z: 0.0)
+//                                )
+//                            .padding(10)
                     }// H
                     .frame(maxHeight: 200)
                     .padding(.bottom, 50)

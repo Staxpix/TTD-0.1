@@ -17,6 +17,7 @@ struct SpotsListCell: View {
     var disciplin: String
     var image: String
     var shortInfo: String
+    
    
     
     var body: some View {

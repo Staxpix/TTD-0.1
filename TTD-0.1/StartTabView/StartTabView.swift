@@ -30,19 +30,8 @@ struct StartTabView: View {
                     Text("News")
                 } }
 
-            PersonsViewFlipOverview()
-                .tabItem { VStack {
-                    Image(systemName: "person.fill")
-                    Text("Trainer")
-                } }
             
-    
-            
-//            Trainingszeiten()
-//                .tabItem {
-//                    Image(systemName: "clock.fill")
-//                    Text("Trainingszeiten")
-//                }
+
             
             LazyTrainingOverview()
                 .tabItem {
@@ -50,16 +39,24 @@ struct StartTabView: View {
                     Text("Trainingszeiten")
                 }
 
-            SpotsList()
+            SpotStart()
                 .tabItem { VStack {
                     Image(systemName: "paperplane.circle.fill")
                     Text("Spots")
                 } }
             
+        
+            
             SpotsMapView()
                 .tabItem { VStack {
                     Image(systemName: "mappin.circle.fill")
                     Text("Spots Map")
+                } }
+            
+            PersonsViewFlipOverview()
+                .tabItem { VStack {
+                    Image(systemName: "person.fill")
+                    Text("Trainer")
                 } }
             
             WorkOutTest()

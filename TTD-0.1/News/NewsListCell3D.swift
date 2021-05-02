@@ -32,11 +32,11 @@ struct NewsListCell3D: View {
                         .degrees(20),
                         axis: (x: 1.0, y: 1.0, z: 0.0)
                         
-                    ).padding(.top, 10)
+                    ).padding(12)
                     .frame(maxWidth: screenSize.width * 0.5, maxHeight: screenSize.height * 0.2, alignment: .center)
                     .clipShape(RoundedRectangle(cornerRadius: 25.0))
-                    .shadow(color: Color.gray.opacity(0.7), radius: 15, x: 10, y: 10)
-                    .shadow(color: Color.gray.opacity(0.2), radius: 15, x: -10, y: -10)
+                    .shadow(color: Color.gray.opacity(0.3), radius: 15, x: 10, y: 10)
+                    .shadow(color: Color.gray.opacity(0.1), radius: 15, x: -10, y: -10)
                     .padding(4)
                 
 //                Divider()
@@ -47,7 +47,7 @@ struct NewsListCell3D: View {
                         .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                         .multilineTextAlignment(.center)
                         .lineLimit(3)
-                        .foregroundColor(.black)
+                        .foregroundColor(.ttdText)
                         .padding(.top, 12)
                     
                     Text(date)
@@ -78,7 +78,7 @@ struct NewsListCell3D: View {
                    alignment: .center)
             .background(Color.ttdWhite)
             .cornerRadius(25)
-            .shadow(color: Color.gray.opacity(0.3), radius: 10, x: 10, y: 10)
+            .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 10, y: 10)
             .shadow(color: Color.gray.opacity(0.1), radius: 10, x: -2, y: -2)
             
             

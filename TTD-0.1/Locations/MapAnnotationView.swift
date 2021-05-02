@@ -25,7 +25,7 @@ struct MapAnnotationView: View {
                 .frame(width: 40, height: 40, alignment: .center)
             
             Circle()
-                .stroke(Color.accentColor, lineWidth: 3)
+                .stroke(Color.ttdText, lineWidth: 3)
                 .frame(width: 38, height: 38, alignment: .center)
                 .scaleEffect(1 + CGFloat(animation))
                 .opacity(1 - animation)

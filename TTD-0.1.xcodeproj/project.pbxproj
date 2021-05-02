@@ -61,6 +61,10 @@
 		78C1B7342631F7D900261AE7 /* SpotDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C1B7332631F7D900261AE7 /* SpotDetailView.swift */; };
 		78C1B737263204FE00261AE7 /* SpotsMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C1B736263204FE00261AE7 /* SpotsMapView.swift */; };
 		78C1B73A26322B9400261AE7 /* SpotDetailViewMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C1B73926322B9400261AE7 /* SpotDetailViewMap.swift */; };
+		78C6D1E4263C94D800AAAF68 /* SpotStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C6D1E3263C94D800AAAF68 /* SpotStart.swift */; };
+		78C6D1E7263C94ED00AAAF68 /* SpotDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C6D1E6263C94ED00AAAF68 /* SpotDetail.swift */; };
+		78C6D1EA263C94FC00AAAF68 /* SpotStartListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C6D1E9263C94FC00AAAF68 /* SpotStartListItem.swift */; };
+		78C6D1ED263C96FA00AAAF68 /* SpotInsetGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C6D1EC263C96FA00AAAF68 /* SpotInsetGallery.swift */; };
 		78D15C942631E021007020FE /* SpotsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D15C932631E021007020FE /* SpotsModel.swift */; };
 		78D15C972631E913007020FE /* SpotsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D15C962631E913007020FE /* SpotsList.swift */; };
 		78D366F72630185C0075C30D /* NewsList2.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D366F62630185C0075C30D /* NewsList2.0.swift */; };
@@ -125,6 +129,10 @@
 		78C1B7332631F7D900261AE7 /* SpotDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotDetailView.swift; sourceTree = "<group>"; };
 		78C1B736263204FE00261AE7 /* SpotsMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotsMapView.swift; sourceTree = "<group>"; };
 		78C1B73926322B9400261AE7 /* SpotDetailViewMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotDetailViewMap.swift; sourceTree = "<group>"; };
+		78C6D1E3263C94D800AAAF68 /* SpotStart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotStart.swift; sourceTree = "<group>"; };
+		78C6D1E6263C94ED00AAAF68 /* SpotDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotDetail.swift; sourceTree = "<group>"; };
+		78C6D1E9263C94FC00AAAF68 /* SpotStartListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotStartListItem.swift; sourceTree = "<group>"; };
+		78C6D1EC263C96FA00AAAF68 /* SpotInsetGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotInsetGallery.swift; sourceTree = "<group>"; };
 		78D15C932631E021007020FE /* SpotsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotsModel.swift; sourceTree = "<group>"; };
 		78D15C962631E913007020FE /* SpotsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotsList.swift; sourceTree = "<group>"; };
 		78D366F62630185C0075C30D /* NewsList2.0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsList2.0.swift; sourceTree = "<group>"; };
@@ -170,6 +178,10 @@
 		78259FBF2623525E00D1568B /* Alt */ = {
 			isa = PBXGroup;
 			children = (
+				78D366F62630185C0075C30D /* NewsList2.0.swift */,
+				78D15C962631E913007020FE /* SpotsList.swift */,
+				78C1B72B2631EA7500261AE7 /* SpotsListCell.swift */,
+				78C1B7332631F7D900261AE7 /* SpotDetailView.swift */,
 				785141712622F08800C93D08 /* Trainingszeiten.swift */,
 				7829D3B72621AA28003BFE0A /* PersonsOverview.swift */,
 				784C0ABF263495FF0054F98B /* HomeScreen2.swift */,
@@ -212,6 +224,7 @@
 				7829D3BA2621AB4D003BFE0A /* Extensions */,
 				7829D39E2621A61F003BFE0A /* StartTabView */,
 				7829D39D2621A612003BFE0A /* Workout Planner */,
+				78C6D1E2263C94A400AAAF68 /* SpotsNew */,
 				78D15C8F2631DEFA007020FE /* Spots */,
 				7829D39C2621A609003BFE0A /* Locations */,
 				7829D39B2621A5F2003BFE0A /* Trainings */,
@@ -254,7 +267,6 @@
 		7829D3992621A5DD003BFE0A /* News */ = {
 			isa = PBXGroup;
 			children = (
-				78D366F62630185C0075C30D /* NewsList2.0.swift */,
 				78BE7CE1262B475F00072218 /* NewsDetailView.swift */,
 				7819F9632630A97D00B8537E /* NewsListCell3D.swift */,
 				782CDD50263932D400AC53B1 /* NewsListLazy.swift */,
@@ -326,12 +338,20 @@
 			path = TrainingFlipMapCards;
 			sourceTree = "<group>";
 		};
+		78C6D1E2263C94A400AAAF68 /* SpotsNew */ = {
+			isa = PBXGroup;
+			children = (
+				78C6D1E3263C94D800AAAF68 /* SpotStart.swift */,
+				78C6D1E6263C94ED00AAAF68 /* SpotDetail.swift */,
+				78C6D1E9263C94FC00AAAF68 /* SpotStartListItem.swift */,
+				78C6D1EC263C96FA00AAAF68 /* SpotInsetGallery.swift */,
+			);
+			path = SpotsNew;
+			sourceTree = "<group>";
+		};
 		78D15C8F2631DEFA007020FE /* Spots */ = {
 			isa = PBXGroup;
 			children = (
-				78D15C962631E913007020FE /* SpotsList.swift */,
-				78C1B72B2631EA7500261AE7 /* SpotsListCell.swift */,
-				78C1B7332631F7D900261AE7 /* SpotDetailView.swift */,
 				78C1B73926322B9400261AE7 /* SpotDetailViewMap.swift */,
 				78C1B736263204FE00261AE7 /* SpotsMapView.swift */,
 			);
@@ -415,6 +435,7 @@
 				7829D3A52621A64A003BFE0A /* NewsModel.swift in Sources */,
 				78C1B7342631F7D900261AE7 /* SpotDetailView.swift in Sources */,
 				78023D412628E202001F2EB4 /* DrawingDoc.xcdatamodeld in Sources */,
+				78C6D1E4263C94D800AAAF68 /* SpotStart.swift in Sources */,
 				788624C426398026002AFAA1 /* LazyTrainingOverview.swift in Sources */,
 				780B30792623189500F1949E /* NewsListQuer.swift in Sources */,
 				7829D3B82621AA28003BFE0A /* PersonsOverview.swift in Sources */,
@@ -437,8 +458,10 @@
 				782CDD51263932D400AC53B1 /* NewsListLazy.swift in Sources */,
 				78709D9B26261AA600F73722 /* NewsListOnline.swift in Sources */,
 				78FC86022628D9D4000A6F9B /* PersonsViewFlipOverview.swift in Sources */,
+				78C6D1E7263C94ED00AAAF68 /* SpotDetail.swift in Sources */,
 				788715802621ED2700511DEF /* NewsListCell.swift in Sources */,
 				78D15C972631E913007020FE /* SpotsList.swift in Sources */,
+				78C6D1ED263C96FA00AAAF68 /* SpotInsetGallery.swift in Sources */,
 				7829D3892621A5C3003BFE0A /* TTD_0_1App.swift in Sources */,
 				78023D402628E202001F2EB4 /* DrawingWrapper.swift in Sources */,
 				7829D3B52621A9F4003BFE0A /* NewsList.swift in Sources */,
@@ -450,6 +473,7 @@
 				78709DA6262622E200F73722 /* NewsListHoch.swift in Sources */,
 				78023D3E2628E202001F2EB4 /* CoreDataManagerPK.swift in Sources */,
 				7829D3AB2621A6E3003BFE0A /* StartTabView.swift in Sources */,
+				78C6D1EA263C94FC00AAAF68 /* SpotStartListItem.swift in Sources */,
 				78A6ECA02639D2340034E2B8 /* WorkOutTest.swift in Sources */,
 				78A6ECAA2639E4AE0034E2B8 /* runEasyModel.swift in Sources */,
 				7829D3BC2621AB63003BFE0A /* ColorExtension.swift in Sources */,

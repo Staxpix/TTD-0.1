@@ -13,6 +13,7 @@ struct SpotsList: View {
     
     var body: some View {
         
+        
         NavigationView {
             List(spots, id: \.id) { spots in
                 
