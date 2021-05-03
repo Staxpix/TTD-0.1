@@ -33,6 +33,8 @@ struct NewsListLazy: View {
                     LazyVGrid(columns: gridItems, spacing: 8, content: {
                         ForEach(newsOnline) { newsOnline in
                             NavigationLink(
+                                
+                                
                                 destination: NewsDetailView(headline: newsOnline.headline, date: newsOnline.date, autor: newsOnline.autor, image: newsOnline.image, textPreview: newsOnline.textPreview, text: newsOnline.text, introTextLink: newsOnline.introTextLink, linkHomepage: newsOnline.linkHomepage),
                                 label: {
                                     NewsListCell3D(headline: newsOnline.headline, autor: newsOnline.autor, date: newsOnline.date, image: newsOnline.image, textPreview: newsOnline.textPreview)

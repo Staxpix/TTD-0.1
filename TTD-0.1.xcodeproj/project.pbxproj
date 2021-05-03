@@ -51,6 +51,7 @@
 		78709DA6262622E200F73722 /* NewsListHoch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78709DA5262622E200F73722 /* NewsListHoch.swift */; };
 		788624C426398026002AFAA1 /* LazyTrainingOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788624C326398026002AFAA1 /* LazyTrainingOverview.swift */; };
 		788715802621ED2700511DEF /* NewsListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7887157F2621ED2700511DEF /* NewsListCell.swift */; };
+		789A52BC2640860400B831C5 /* RandomWorkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789A52BB2640860400B831C5 /* RandomWorkout.swift */; };
 		78A6ECA02639D2340034E2B8 /* WorkOutTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A6EC9F2639D2340034E2B8 /* WorkOutTest.swift */; };
 		78A6ECA32639E4460034E2B8 /* EasyRun.json in Resources */ = {isa = PBXBuildFile; fileRef = 78A6ECA22639E4460034E2B8 /* EasyRun.json */; };
 		78A6ECAA2639E4AE0034E2B8 /* runEasyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A6ECA92639E4AE0034E2B8 /* runEasyModel.swift */; };
@@ -119,6 +120,7 @@
 		78709DA5262622E200F73722 /* NewsListHoch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListHoch.swift; sourceTree = "<group>"; };
 		788624C326398026002AFAA1 /* LazyTrainingOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyTrainingOverview.swift; sourceTree = "<group>"; };
 		7887157F2621ED2700511DEF /* NewsListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListCell.swift; sourceTree = "<group>"; };
+		789A52BB2640860400B831C5 /* RandomWorkout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomWorkout.swift; sourceTree = "<group>"; };
 		78A6EC9F2639D2340034E2B8 /* WorkOutTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkOutTest.swift; sourceTree = "<group>"; };
 		78A6ECA22639E4460034E2B8 /* EasyRun.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = EasyRun.json; sourceTree = "<group>"; };
 		78A6ECA92639E4AE0034E2B8 /* runEasyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = runEasyModel.swift; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 		78259FBF2623525E00D1568B /* Alt */ = {
 			isa = PBXGroup;
 			children = (
+				78A6EC9F2639D2340034E2B8 /* WorkOutTest.swift */,
 				78D366F62630185C0075C30D /* NewsList2.0.swift */,
 				78D15C962631E913007020FE /* SpotsList.swift */,
 				78C1B72B2631EA7500261AE7 /* SpotsListCell.swift */,
@@ -307,7 +310,7 @@
 		7829D39D2621A612003BFE0A /* Workout Planner */ = {
 			isa = PBXGroup;
 			children = (
-				78A6EC9F2639D2340034E2B8 /* WorkOutTest.swift */,
+				789A52BB2640860400B831C5 /* RandomWorkout.swift */,
 			);
 			path = "Workout Planner";
 			sourceTree = "<group>";
@@ -451,6 +454,7 @@
 				78C1B72C2631EA7500261AE7 /* SpotsListCell.swift in Sources */,
 				78BE7CE2262B475F00072218 /* NewsDetailView.swift in Sources */,
 				780B30702622F1C700F1949E /* IPadSideBarView.swift in Sources */,
+				789A52BC2640860400B831C5 /* RandomWorkout.swift in Sources */,
 				78C1B737263204FE00261AE7 /* SpotsMapView.swift in Sources */,
 				7829D3B22621A86F003BFE0A /* HomeScreen.swift in Sources */,
 				783D0D0D262F5E7700EEC63C /* NewsListCell2.0.swift in Sources */,

@@ -24,26 +24,9 @@ struct NewsListCell3D: View {
             
             VStack(alignment: .center ,spacing: 10){
                 
-                Image(uiImage: image.load())
-                    .resizable()
-                    .scaledToFit()
-                    .cornerRadius(25)
-                    .rotation3DEffect(
-                        .degrees(20),
-                        axis: (x: 1.0, y: 1.0, z: 0.0)
-                        
-                    ).padding(12)
-                    .frame(maxWidth: screenSize.width * 0.5, maxHeight: screenSize.height * 0.2, alignment: .center)
-                    .clipShape(RoundedRectangle(cornerRadius: 25.0))
-                    .shadow(color: Color.gray.opacity(0.3), radius: 15, x: 10, y: 10)
-                    .shadow(color: Color.gray.opacity(0.1), radius: 15, x: -10, y: -10)
-                    .padding(4)
-                
-//                Divider()
-                
-                VStack(spacing: 22) {
+                VStack(spacing: 12) {
                     Text(headline)
-                        .font(.footnote)
+                        .font(.title3)
                         .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                         .multilineTextAlignment(.center)
                         .lineLimit(3)
@@ -55,14 +38,35 @@ struct NewsListCell3D: View {
                         .foregroundColor(.black)
                         .font(.caption)
                 
+                Image(uiImage: image.load())
+                    .resizable()
+                    .scaledToFit()
+                    .cornerRadius(25)
+                    .rotation3DEffect(
+                        .degrees(20),
+                        axis: (x: 0.5, y: 0.0, z: 0.0)
+                        
+                    ).padding(12)
+                    .frame(maxWidth: screenSize.width * 0.4, maxHeight: screenSize.height * 0.2, alignment: .center)
+                    .clipShape(RoundedRectangle(cornerRadius: 25.0))
+                    .shadow(color: Color.gray.opacity(0.3), radius: 15, x: 10, y: 10)
+                    .shadow(color: Color.gray.opacity(0.1), radius: 15, x: -10, y: -10)
+                    .padding(4)
+                
+//                Divider()
                 
                 
-                Text(textPreview)
-                    .font(.caption)
-                    .lineLimit(3)
-                    .lineSpacing(5)
-                    .padding(12)
-                    .foregroundColor(.black)
+                    
+                    
+                
+//
+//
+//                Text(textPreview)
+//                    .font(.body)
+//                    .lineLimit(3)
+//                    .lineSpacing(5)
+//                    .padding(12)
+//                    .foregroundColor(.black)
                     
                     
                 }// V
@@ -90,6 +94,6 @@ struct NewsListCell3D: View {
 
 struct NewsListCell3D_Previews: PreviewProvider {
     static var previews: some View {
-        NewsListCell3D(headline: "Headline", autor: "Autor", date: "12.123.123", image: "oli", textPreview: "fjdkalö jfkdlaösa jfj  wh fnkaslö fdajkda öjfdakö f jhfdkaöjdklaö fdhafjkdöa fjkdjafökdj fahklfdöajfk a")
+        NewsListCell3D(headline: "Headline", autor: "Autor", date: "12.123.123", image: "jens", textPreview: "fjdkalö jfkdlaösa jfj  wh fnkaslö fdajkda öjfdakö f jhfdkaöjdklaö fdhafjkdöa fjkdjafökdj fahklfdöajfk a")
     }
 }

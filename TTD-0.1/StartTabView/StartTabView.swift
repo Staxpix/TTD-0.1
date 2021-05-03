@@ -59,7 +59,7 @@ struct StartTabView: View {
                     Text("Trainer")
                 } }
             
-            WorkOutTest()
+            RandomWorkout()
                 .tabItem {
                     VStack {
                         Image(systemName: "chart.bar.doc.horizontal.fill")

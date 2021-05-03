@@ -71,7 +71,7 @@ struct SpotDetail: View {
                             
                             SpotDetailViewMapInset(coordinates: spots.locationsSpots, spotName: spots.headline)
                                 
-                                .frame(height: 200)
+                                .frame(height: 300)
                                 .cornerRadius(25)
                                
                                 

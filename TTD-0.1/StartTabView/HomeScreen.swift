@@ -53,6 +53,7 @@ struct HomeScreen: View {
                     .cornerRadius(25)
                     .clipShape(Circle())
                     .shadow(color: Color.gray.opacity(isVisible ? 0.3 : 0.0), radius: 10, x: 15, y: 10)
+                    .shadow(color: Color.gray.opacity(isVisible ? 0.08 : 0.0), radius: 10, x: -15, y: -10)
                    
                 Image("ttd-schriftzug")
                     .resizable()
@@ -66,6 +67,7 @@ struct HomeScreen: View {
                     .cornerRadius(25)
                     .clipShape(RoundedRectangle(cornerRadius:25))
                     .shadow(color: Color.gray.opacity(isVisible ? 0.3 : 0.0), radius: 10, x: 15, y: 10)
+                    .shadow(color: Color.gray.opacity(isVisible ? 0.08 : 0.0), radius: 10, x: -15, y: -10)
                     
                 
                 
