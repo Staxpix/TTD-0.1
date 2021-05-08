@@ -30,6 +30,7 @@ struct NewsListLazy: View {
         NavigationView {
             
                 ScrollView {
+                    
                     LazyVGrid(columns: gridItems, spacing: 8, content: {
                         ForEach(newsOnline) { newsOnline in
                             NavigationLink(

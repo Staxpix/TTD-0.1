@@ -9,6 +9,10 @@ import SwiftUI
 
 struct HomeScreen: View {
     
+    @StateObject var viewModel = WeatherViewModel()
+    
+    
+    
     private var screenSize = UIScreen.main.bounds
     
     @State private var isVisible = false
@@ -17,6 +21,7 @@ struct HomeScreen: View {
     
     var body: some View {
         
+      
         ZStack {
             
             
@@ -68,7 +73,37 @@ struct HomeScreen: View {
                     .clipShape(RoundedRectangle(cornerRadius:25))
                     .shadow(color: Color.gray.opacity(isVisible ? 0.3 : 0.0), radius: 10, x: 15, y: 10)
                     .shadow(color: Color.gray.opacity(isVisible ? 0.08 : 0.0), radius: 10, x: -15, y: -10)
+                
+                VStack(alignment: .center, spacing: 22) {
+                    Text(viewModel.title)
+                        .font(.headline)
                     
+                    HStack(alignment: .center, spacing: 22){
+                        VStack(alignment: .leading, spacing: 12) {
+                            Text("Wetter: \(viewModel.main)")
+                            Text("Temp: \(Int(viewModel.temp)) °Grad")
+                            Text("Gefühlt: \(Int(viewModel.feelsLike)) °Grad")
+                        }.multilineTextAlignment(.leading)
+                        
+                        VStack(alignment: .leading, spacing: 12){
+                            Text(viewModel.description)
+                        
+                            Text("Wind: \(Int(1.6 * viewModel.wind)) km/h")
+                                .multilineTextAlignment(.leading)
+                            
+                            HStack{
+                                Text("Richtung: ")
+                                Image(systemName: "shift.fill")
+                                    .rotationEffect(.degrees((Double(360 - viewModel.deg))))
+                            }.multilineTextAlignment(.leading)
+                            
+                        }.multilineTextAlignment(.leading)
+                        
+                    }
+       
+                    
+                    
+                }.multilineTextAlignment(.leading)
                 
                 
            

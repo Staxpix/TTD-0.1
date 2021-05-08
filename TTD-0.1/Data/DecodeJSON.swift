@@ -11,6 +11,8 @@ extension Bundle {
         // 1. Locate the Data
         guard let url = self.url(forResource: file, withExtension: nil) else {
             fatalError("Kaputt")
+            
+        
         }
         // 2. Create a property for the data
         guard let data = try? Data(contentsOf: url) else {
@@ -25,6 +27,11 @@ extension Bundle {
         // 5. Return the ready-to-use data
         return loaded
     }
+    
+    
+    
+    
+    
 }
 
 
