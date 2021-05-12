@@ -13,7 +13,7 @@ struct SpotDetailView: View {
     let spots : [Spots] = Bundle.main.decode("Spots.json")
     
     
-    var id: Int
+    
     var headline: String
     var distance: String
     var disciplin: String

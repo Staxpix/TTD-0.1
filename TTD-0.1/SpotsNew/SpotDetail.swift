@@ -35,7 +35,7 @@ struct SpotDetail: View {
                         .foregroundColor(.accentColor)
                     
                         
-                        SpotInsetGallery(spots: spots)
+                        SpotInsetGallery3(spots: spots)
                             
                         NavigationLink(
                             destination: SpotDetailViewMap(coordinates: spots.locationsSpots, spotName: spots.headline),

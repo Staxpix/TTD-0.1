@@ -18,7 +18,7 @@ struct SpotsList: View {
             List(spots, id: \.id) { spots in
                 
                 NavigationLink(
-                    destination: SpotDetailView(id: spots.id, headline: spots.headline, distance: spots.distance, disciplin: spots.disciplin, image: spots.image, shortInfo: spots.shortInfo, latitude: spots.latitude, longitude: spots.longitude, text: spots.text, locationsSpots: spots.locationsSpots, index: spots.id),
+                    destination: SpotDetailView( headline: spots.headline, distance: spots.distance, disciplin: spots.disciplin, image: spots.image, shortInfo: spots.shortInfo, latitude: spots.latitude, longitude: spots.longitude, text: spots.text, locationsSpots: spots.locationsSpots, index: 1),
                     label: {
                         SpotsListCell(headline: spots.headline, disciplin: spots.disciplin, image: spots.image, shortInfo: spots.shortInfo)
                     })

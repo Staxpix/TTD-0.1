@@ -78,15 +78,17 @@ struct HomeScreen: View {
                     Text(viewModel.title)
                         .font(.headline)
                     
+                    Text(viewModel.description)
+                    
                     HStack(alignment: .center, spacing: 22){
                         VStack(alignment: .leading, spacing: 12) {
-                            Text("Wetter: \(viewModel.main)")
+//                            Text("Wetter: \(viewModel.main)")
                             Text("Temp: \(Int(viewModel.temp)) °Grad")
                             Text("Gefühlt: \(Int(viewModel.feelsLike)) °Grad")
                         }.multilineTextAlignment(.leading)
                         
                         VStack(alignment: .leading, spacing: 12){
-                            Text(viewModel.description)
+//                            Text(viewModel.description)
                         
                             Text("Wind: \(Int(1.6 * viewModel.wind)) km/h")
                                 .multilineTextAlignment(.leading)
