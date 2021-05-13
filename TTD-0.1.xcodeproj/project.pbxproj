@@ -54,7 +54,6 @@
 		789A52BC2640860400B831C5 /* RandomWorkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789A52BB2640860400B831C5 /* RandomWorkout.swift */; };
 		78A6ECA02639D2340034E2B8 /* WorkOutTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A6EC9F2639D2340034E2B8 /* WorkOutTest.swift */; };
 		78A6ECA32639E4460034E2B8 /* EasyRun.json in Resources */ = {isa = PBXBuildFile; fileRef = 78A6ECA22639E4460034E2B8 /* EasyRun.json */; };
-		78A6ECAA2639E4AE0034E2B8 /* runEasyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A6ECA92639E4AE0034E2B8 /* runEasyModel.swift */; };
 		78B1273926359C8500D69CA7 /* TrainingDayFlipCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B1273826359C8500D69CA7 /* TrainingDayFlipCell.swift */; };
 		78BE7CE2262B475F00072218 /* NewsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BE7CE1262B475F00072218 /* NewsDetailView.swift */; };
 		78C1B72C2631EA7500261AE7 /* SpotsListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C1B72B2631EA7500261AE7 /* SpotsListCell.swift */; };
@@ -71,10 +70,13 @@
 		78D366F72630185C0075C30D /* NewsList2.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D366F62630185C0075C30D /* NewsList2.0.swift */; };
 		78D6B09F26458B1D00CB3494 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D6B09C26458B1D00CB3494 /* Models.swift */; };
 		78D6B0A126458B1D00CB3494 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D6B09E26458B1D00CB3494 /* ViewModel.swift */; };
+		78DC8B73264DA021004E37DE /* MediumRunTrainingsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DC8B72264DA021004E37DE /* MediumRunTrainingsData.swift */; };
 		78EABB05264ABF4800AF7268 /* ContentView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EABB04264ABF4800AF7268 /* ContentView2.swift */; };
 		78EABB09264B231600AF7268 /* SpotsImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EABB08264B231600AF7268 /* SpotsImageView.swift */; };
 		78EABB0B264BAA1D00AF7268 /* SpotInsetGallery2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EABB0A264BAA1D00AF7268 /* SpotInsetGallery2.swift */; };
 		78EABB0D264BAE2800AF7268 /* SpotInsetGallery3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EABB0C264BAE2800AF7268 /* SpotInsetGallery3.swift */; };
+		78EABB0F264D6E7B00AF7268 /* HardRunTrainingsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EABB0E264D6E7B00AF7268 /* HardRunTrainingsData.swift */; };
+		78EABB11264D70A500AF7268 /* EasyRunTrainingsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EABB10264D70A500AF7268 /* EasyRunTrainingsData.swift */; };
 		78FC85FE2628D813000A6F9B /* PersonsCardBackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FC85FD2628D813000A6F9B /* PersonsCardBackView.swift */; };
 		78FC86022628D9D4000A6F9B /* PersonsViewFlipOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FC86012628D9D4000A6F9B /* PersonsViewFlipOverview.swift */; };
 /* End PBXBuildFile section */
@@ -129,7 +131,6 @@
 		789A52BB2640860400B831C5 /* RandomWorkout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomWorkout.swift; sourceTree = "<group>"; };
 		78A6EC9F2639D2340034E2B8 /* WorkOutTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkOutTest.swift; sourceTree = "<group>"; };
 		78A6ECA22639E4460034E2B8 /* EasyRun.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = EasyRun.json; sourceTree = "<group>"; };
-		78A6ECA92639E4AE0034E2B8 /* runEasyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = runEasyModel.swift; sourceTree = "<group>"; };
 		78B1273826359C8500D69CA7 /* TrainingDayFlipCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingDayFlipCell.swift; sourceTree = "<group>"; };
 		78BE7CE1262B475F00072218 /* NewsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailView.swift; sourceTree = "<group>"; };
 		78C1B72B2631EA7500261AE7 /* SpotsListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotsListCell.swift; sourceTree = "<group>"; };
@@ -146,11 +147,14 @@
 		78D366F62630185C0075C30D /* NewsList2.0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsList2.0.swift; sourceTree = "<group>"; };
 		78D6B09C26458B1D00CB3494 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		78D6B09E26458B1D00CB3494 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		78DC8B72264DA021004E37DE /* MediumRunTrainingsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumRunTrainingsData.swift; sourceTree = "<group>"; };
 		78EABAFE264ABF0500AF7268 /* ContentView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView2.swift; sourceTree = "<group>"; };
 		78EABB04264ABF4800AF7268 /* ContentView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView2.swift; path = ../Alt/ContentView2.swift; sourceTree = "<group>"; };
 		78EABB08264B231600AF7268 /* SpotsImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotsImageView.swift; sourceTree = "<group>"; };
 		78EABB0A264BAA1D00AF7268 /* SpotInsetGallery2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotInsetGallery2.swift; sourceTree = "<group>"; };
 		78EABB0C264BAE2800AF7268 /* SpotInsetGallery3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotInsetGallery3.swift; sourceTree = "<group>"; };
+		78EABB0E264D6E7B00AF7268 /* HardRunTrainingsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardRunTrainingsData.swift; sourceTree = "<group>"; };
+		78EABB10264D70A500AF7268 /* EasyRunTrainingsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyRunTrainingsData.swift; sourceTree = "<group>"; };
 		78FC85FD2628D813000A6F9B /* PersonsCardBackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsCardBackView.swift; sourceTree = "<group>"; };
 		78FC86012628D9D4000A6F9B /* PersonsViewFlipOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsViewFlipOverview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -278,7 +282,6 @@
 				7829D3A32621A64A003BFE0A /* PersonsModel.swift */,
 				78709D972626157000F73722 /* NewsModelOnline.swift */,
 				78D15C932631E021007020FE /* SpotsModel.swift */,
-				78A6ECA92639E4AE0034E2B8 /* runEasyModel.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -327,6 +330,9 @@
 			isa = PBXGroup;
 			children = (
 				789A52BB2640860400B831C5 /* RandomWorkout.swift */,
+				78EABB0E264D6E7B00AF7268 /* HardRunTrainingsData.swift */,
+				78EABB10264D70A500AF7268 /* EasyRunTrainingsData.swift */,
+				78DC8B72264DA021004E37DE /* MediumRunTrainingsData.swift */,
 			);
 			path = "Workout Planner";
 			sourceTree = "<group>";
@@ -480,6 +486,7 @@
 				7829D3A82621A64A003BFE0A /* PersonsModel.swift in Sources */,
 				7829D3A62621A64A003BFE0A /* DecodeJSON.swift in Sources */,
 				78D6B0A126458B1D00CB3494 /* ViewModel.swift in Sources */,
+				78EABB0F264D6E7B00AF7268 /* HardRunTrainingsData.swift in Sources */,
 				7829D38B2621A5C3003BFE0A /* ContentView.swift in Sources */,
 				78C1B72C2631EA7500261AE7 /* SpotsListCell.swift in Sources */,
 				78BE7CE2262B475F00072218 /* NewsDetailView.swift in Sources */,
@@ -509,11 +516,11 @@
 				78023D4F262A02AE001F2EB4 /* MapAnnotationView.swift in Sources */,
 				781C371626274E9E0094A4F9 /* PersonsOverviewGeo.swift in Sources */,
 				78709DA6262622E200F73722 /* NewsListHoch.swift in Sources */,
+				78DC8B73264DA021004E37DE /* MediumRunTrainingsData.swift in Sources */,
 				78023D3E2628E202001F2EB4 /* CoreDataManagerPK.swift in Sources */,
 				7829D3AB2621A6E3003BFE0A /* StartTabView.swift in Sources */,
 				78C6D1EA263C94FC00AAAF68 /* SpotStartListItem.swift in Sources */,
 				78A6ECA02639D2340034E2B8 /* WorkOutTest.swift in Sources */,
-				78A6ECAA2639E4AE0034E2B8 /* runEasyModel.swift in Sources */,
 				7829D3BC2621AB63003BFE0A /* ColorExtension.swift in Sources */,
 				78709D982626157000F73722 /* NewsModelOnline.swift in Sources */,
 				78023D3D2628E202001F2EB4 /* DrawingViewController.swift in Sources */,
@@ -521,6 +528,7 @@
 				782CDD472635BEC500AC53B1 /* RheinbadTrainingView.swift in Sources */,
 				78023D432628E202001F2EB4 /* PenilKit1.swift in Sources */,
 				780B30732622F47F00F1949E /* MapViewTrainingsLocations.swift in Sources */,
+				78EABB11264D70A500AF7268 /* EasyRunTrainingsData.swift in Sources */,
 				78023D3C2628E202001F2EB4 /* AddNewDocument.swift in Sources */,
 				78D15C942631E021007020FE /* SpotsModel.swift in Sources */,
 				7829D3AF2621A7A2003BFE0A /* PersonsCardView.swift in Sources */,

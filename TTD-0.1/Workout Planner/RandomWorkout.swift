@@ -9,24 +9,6 @@ import SwiftUI
 
 struct RandomWorkout: View {
     
-    // Sammlung EASY
-    var allEasyRuns : [EasyRunTrainings] = [
-    
-    EasyRunTrainings(warmUp: "5 Minuten locker einlaufen", main: "5km GA1", coolDown: "10 min locker auslaufen", intensity: IntensityEasyRunTrainings(short: "2 Minuten", long: "5 Minuten")),
-        
-    EasyRunTrainings(warmUp: "10 Minuten locker einlaufen", main: "10km GA1", coolDown: "15 min locker auslaufen", intensity: IntensityEasyRunTrainings(short: "4 Minuten", long: "10 Minuten")),
-        
-    EasyRunTrainings(warmUp: "15 Minuten locker einlaufen", main: "15km GA1", coolDown: "20 min locker auslaufen", intensity: IntensityEasyRunTrainings(short: "8 Minuten", long: "14 Minuten"))]
-    
-    // Sammlung Medium
-    var allMediumRuns : [MediumRunTrainings] = [
-    
-        MediumRunTrainings(warmUp: "5 Minuten Lauf-ABC", main: "5x400m", coolDown: "5 Minunten auslaufen", intensity: IntensityMediumRunTrainings(short: "1 Minute", long: "2 Minuten")),
-        
-        MediumRunTrainings(warmUp: "10 Minuten Lauf-ABC", main: "8x400m", coolDown: "10 Minunten auslaufen", intensity: IntensityMediumRunTrainings(short: "2 Minute", long: "4 Minuten")),
-        
-        MediumRunTrainings(warmUp: "15 Minuten Lauf-ABC", main: "10x400m", coolDown: "15 Minunten auslaufen", intensity: IntensityMediumRunTrainings(short: "3 Minute", long: "6 Minuten"))]
-    
     // Array für Auswahl im Picker
     let auswahlRun : [String] = ["Easy", "Medium", "Hard"]
     
@@ -41,69 +23,125 @@ struct RandomWorkout: View {
     @State var randomRunTempMain : String = ""
     @State var randomRunTempCoolDown : String = ""
     
-    // Funktion RandomNumber für Auswahl im Array
-    func tempRandomNumber() -> Int {
+    // Funktion RandomNumber für Auswahl im Array === RUN EASY
+    func tempRandomNumberRunEasy() -> Int {
         let temRanNum = Int.random(in: 0..<allEasyRuns.count)
-        return temRanNum
-    }
+        return temRanNum }
     
-    let screenSize = UIScreen.main.bounds
+    // Funktion RandomNumber für Auswahl im Array === RUN MEDIUM
+    func tempRandomNumberRunMedium() -> Int {
+        let temRanNum = Int.random(in: 0..<allMediumRuns.count)
+        return temRanNum }
+    
+    // Funktion RandomNumber für Auswahl im Array === RUN HARD
+    func tempRandomNumberRunHard() -> Int {
+        let temRanNum = Int.random(in: 0..<allHardRuns.count)
+        return temRanNum }
+    
     
     var body: some View {
         
         ScrollView {
             VStack {
-                VStack(spacing: 20) {
+                VStack(spacing: 10) {
+                    
+                    Text("Lauf-Training")
+                        .font(.title2)
+                        .fontWeight(.bold)
+                        .foregroundColor(.ttdText)
+                        .padding(.bottom, 20)
+                    
                     Picker(selection: $selectedRun, label: Text("Picker"), content: {
                         ForEach(0..<auswahlRun.count) {
                             Text(auswahlRun[$0])
                         }
                     }).pickerStyle(SegmentedPickerStyle())
                     .padding(.horizontal)
+                    .padding(.bottom)
                     
-                    Text("\(auswahlRun[selectedRun])")
+                    //                    Text("\(auswahlRun[selectedRun])")
                     
                     let selectedFromPicker = auswahlRun[selectedRun]
                     
                     Button(action: {
                         
                         if selectedFromPicker == "Easy" {
-                            let temRanNum = tempRandomNumber()
+                            let temRanNum = tempRandomNumberRunEasy()
                             randomRunTempWarmUp = "\(allEasyRuns[temRanNum].warmUp)"
                             randomRunTempMain = "\(allEasyRuns[temRanNum].main)"
                             randomRunTempCoolDown = "\(allEasyRuns[temRanNum].coolDown)"
+                            
                         } else if selectedFromPicker == "Medium" {
-                            let temRanNum = tempRandomNumber()
+                            let temRanNum = tempRandomNumberRunMedium()
                             randomRunTempWarmUp = "\(allMediumRuns[temRanNum].warmUp)"
                             randomRunTempMain = "\(allMediumRuns[temRanNum].main)"
                             randomRunTempCoolDown = "\(allMediumRuns[temRanNum].coolDown)"
+                        } else if selectedFromPicker == "Hard" {
+                            let temRanNum = tempRandomNumberRunHard()
+                            randomRunTempWarmUp = "\(allHardRuns[temRanNum].warmUp)"
+                            randomRunTempMain = "\(allHardRuns[temRanNum].main)"
+                            randomRunTempCoolDown = "\(allHardRuns[temRanNum].coolDown)"
                         }
                         
                     }, label: {
-                        VStack {
-                            
-                            Text("Zufälliges Training erstellen")
-                                .bold()
-                                .padding(.top, 14)
+                        HStack {
                             Image("ttd-logo")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: 80, height: 80, alignment: .center)
-                        }
+                                .frame(width: 60, height: 60, alignment: .center)
+                            Text("Training erstellen")
+                                .font(.body)
+                                .bold()
+                                .padding(.horizontal)
+                                .multilineTextAlignment(.center)
+                            Image("ttd-logo")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 60, height: 60, alignment: .center)
+                            
+                        }.frame(width: 280, height: 80, alignment: .center)
+                        .padding(2)
+                        .background(Color.ttdWhite)
+                        .cornerRadius(25)
+                        .shadow(color: Color.gray.opacity(0.3), radius: 10, x: 10, y: 10)
+                        .shadow(color: Color.gray.opacity(0.1), radius: 10, x: -2, y: -2)
                     })
                     
-                    VStack(spacing: 12) {
-                        Text("Warm-Up: \n \(randomRunTempWarmUp)")
-                            .fontWeight(.medium)
-                        Text("Main: \n \(randomRunTempMain)")
-                            .fontWeight(.medium)
-                        Text("Cool-Down \n \(randomRunTempCoolDown)")
-                            .fontWeight(.medium)
+                    VStack(alignment: .center, spacing: 22) {
+                        
+                        VStack(alignment: .center){
+                            
+                            VStack(alignment: .center, spacing: 40){
+                                VStack(spacing: 6){
+                                    Text("Warm-Up:")
+                                        .bold()
+                                    Text("\(randomRunTempWarmUp)")
+                                        .fontWeight(.medium)
+                                }.multilineTextAlignment(.center)
+                                
+                                VStack(spacing: 6){
+                                    Text("Main:")
+                                        .bold()
+                                    Text("\(randomRunTempMain)")
+                                        .fontWeight(.medium)
+                                }.multilineTextAlignment(.center)
+                                
+                                
+                                VStack(spacing: 6){
+                                    Text("Cool-Down:")
+                                        .bold()
+                                    Text("\(randomRunTempCoolDown)")
+                                        .fontWeight(.medium)
+                                }.multilineTextAlignment(.center)
+                            }
+                        }.frame(width: 300, height: 280, alignment: .center)
+                        .animation(.interactiveSpring(response: 1, dampingFraction: 1, blendDuration: 3))
                     }
+                    .padding()
                     .font(.callout)
                     .foregroundColor(.ttdText)
-                    .multilineTextAlignment(.center)
-                    .frame(width: 250, height: 300, alignment: .center)
+                    .multilineTextAlignment(.leading)
+                    .frame(width: 340, height: 300, alignment: .center)
                     .background(Color.ttdWhite)
                     .cornerRadius(25)
                     .shadow(color: Color.gray.opacity(0.3), radius: 10, x: 10, y: 10)
@@ -113,102 +151,12 @@ struct RandomWorkout: View {
                     Text("Viel Spaß!")
                         .bold()
                         .padding(.top, 14)
-                    
-                    
                 }
             } // 1. VStack
             .padding(50)
-            
-            
-            //// Test
-            VStack {
-                VStack(spacing: 20) {
-                    Picker(selection: $selectedRun, label: Text("Picker"), content: {
-                        ForEach(0..<auswahlRun.count) {
-                            Text(auswahlRun[$0])
-                        }
-                    }).pickerStyle(SegmentedPickerStyle())
-                    .padding(.horizontal)
-                    
-                    Text("\(auswahlRun[selectedRun])")
-                    
-                    let selectedFromPicker = auswahlRun[selectedRun]
-                    
-                    Button(action: {
-                        
-                        if selectedFromPicker == "Easy" {
-                            let temRanNum = tempRandomNumber()
-                            randomRunTempWarmUp = "\(allEasyRuns[temRanNum].warmUp)"
-                            randomRunTempMain = "\(allEasyRuns[temRanNum].main)"
-                            randomRunTempCoolDown = "\(allEasyRuns[temRanNum].coolDown)"
-                        } else if selectedFromPicker == "Medium" {
-                            let temRanNum = tempRandomNumber()
-                            randomRunTempWarmUp = "\(allMediumRuns[temRanNum].warmUp)"
-                            randomRunTempMain = "\(allMediumRuns[temRanNum].main)"
-                            randomRunTempCoolDown = "\(allMediumRuns[temRanNum].coolDown)"
-                        }
-                        
-                    }, label: {
-                        VStack {
-                            
-                            Text("Zufälliges Training erstellen")
-                                .bold()
-                                .padding(.top, 14)
-                            Image("ttd-logo")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 80, height: 80, alignment: .center)
-                        }
-                    })
-                    
-                    VStack(spacing: 12) {
-                        Text("Warm-Up: \n \(randomRunTempWarmUp)")
-                            .fontWeight(.medium)
-                        Text("Main: \n \(randomRunTempMain)")
-                            .fontWeight(.medium)
-                        Text("Cool-Down \n \(randomRunTempCoolDown)")
-                            .fontWeight(.medium)
-                    }
-                    .font(.callout)
-                    .foregroundColor(.ttdText)
-                    .multilineTextAlignment(.center)
-                    .frame(width: 250, height: 300, alignment: .center)
-                    .background(Color.ttdWhite)
-                    .cornerRadius(25)
-                    .shadow(color: Color.gray.opacity(0.3), radius: 10, x: 10, y: 10)
-                    .shadow(color: Color.gray.opacity(0.1), radius: 10, x: -2, y: -2)
-                    .padding()
-                    
-                    Text("Viel Spaß!")
-                        .bold()
-                        .padding(.top, 14)
-                    
-                    
-                }
-            } // 1. VStack
-            .padding(50)
-            
-            
         }
-        
-        
-        
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // Preview
 struct RandomWorkout_Previews: PreviewProvider {
@@ -217,35 +165,4 @@ struct RandomWorkout_Previews: PreviewProvider {
     }
 }
 
-// EASY
-struct EasyRunTrainings {
-    var warmUp : String
-    var main : String
-    var coolDown : String
-    
-    var intensity = IntensityEasyRunTrainings(short: "", long: "")
-    
-    
-    
-}
 
-struct IntensityEasyRunTrainings {
-    var short : String
-    var long : String
-}
-// MEDIUM
-struct MediumRunTrainings {
-    var warmUp : String
-    var main : String
-    var coolDown : String
-    
-    var intensity = IntensityMediumRunTrainings(short: "", long: "")
-    
-    
-    
-}
-
-struct IntensityMediumRunTrainings {
-    var short : String
-    var long : String
-}

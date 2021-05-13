@@ -24,7 +24,8 @@ class apiCall {
     func getNewsOnline(completion:@escaping ([NewsOnline]) -> ()) {
         guard let url = URL(string: "https://gravelventure.de/NewsOnline.json") else { return }
         URLSession.shared.dataTask(with: url) { (data, _, _) in
-            let newsOnline = try! JSONDecoder().decode([NewsOnline].self, from: data!)
+            guard let data = data else {return}
+            guard let newsOnline = try? JSONDecoder().decode([NewsOnline].self, from: data) else {fatalError("Hier geht gar nix")}
             print(newsOnline)
             
             DispatchQueue.main.async {
