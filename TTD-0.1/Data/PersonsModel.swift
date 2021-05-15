@@ -12,4 +12,5 @@ struct Persons: Codable, Identifiable {
     let name: String
     let status: String
     let image: String
+    let description: String
 }

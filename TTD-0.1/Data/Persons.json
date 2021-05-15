@@ -3,20 +3,24 @@
         "id": "1",
         "name": "Holger Osesek",
         "status": "1. Vorsitzender",
+        "description": "Hier laufen also die Fäden zusammen. Natürlich ist auch Holger leidenschaftlicher Triathlet, der jetzt nochmal auf der LD angreift. An dieser Stelle sei aber gesagt, dass es noch sehr viel mehr Personen gibt, die sich ehrenamtlich im TTD engagieren, unser Bekleidungsteam, weitere Übungsleiter und z.B. unsere Rad-Guides.",
         "image": "holger"
     },
     
     {
         "id": "2",
-        "name": "Oliver Plum",
-        "status": "Schwimm-Trainer und Ansprechpartner für alle angehende Langdistanzler",
-        "image": "oli"
+        "name": "Bianca Späth",
+        "status": "2. Vorsitzende",
+        "description": "Bianca ist unsere 2. Vorsitzende, verwaltet den Mitgliederstamm und agiert auch als Übungsleiterin. Solltet ihr euch also z.B. bei uns anmelden, gehen die Unterlagen immer über Biancas Tisch. Erfahrungen hat sie schon über alle Distanzen gemacht. Übrigens ein tolles Beispiel für eine Triathlon-Familie, auch auch Tochter und Mann aktive TTD-Mitglieder sind",
+        "image": "bianca"
     },
+    
 
     {
         "id": "3",
         "name": "Heiko Lickfett",
         "status": "Finanzvorstand",
+        "description": "Bei Game of Thrones hätte Heiko den Titel 'Meister der Münze', bei uns reicht es nur zum Finanzvorstand. Gewissenhaft hält er die Devisen zusammen und verwaltet dise nachhaltig! Auch Heiko kann mit Auftritten auf allen Ditanzen glänzen und wer etwas in unseren Newsfeeds sucht, wird sogar Bilder aus Zeiten finden, da kannten viele von Euch den Sport Triathlon garantiert noch nicht ;-)",
         "image": "heiko"
     },
 
@@ -24,6 +28,7 @@
         "id": "4",
         "name": "Heike Hünchen",
         "status": "Leiterin Sportbetrieb",
+        "description": "Heike ist unsere Leiterin Sportbetrieb und somit hauptverantwortlich für unsere sportliche Ausrichtung und die Koordination von Trainern bzw. Trainings. Zuhaue fühlt sie sich auf der Langdistanz.",
         "image": "heike"
     },
 
@@ -31,70 +36,92 @@
         "id": "5",
         "name": "Jan Hofmann",
         "status": "Kommunikation & Marketing",
+        "description": "Im erweiterten Vorstand übernimmt Jan mit einem kleinen Team die Themen Kommunikation & Marketing. Wie so viele träumt er von der Insel im Pazifik und hofft auf den ein oder anderen Ligaeinsatz.",
         "image": "jan"
     },
-
+    
     {
         "id": "6",
-        "name": "Albert Florack",
-        "status": "Stellv. Kassenprüfer",
-        "image": "albert"
+        "name": "Karin Hörmann",
+        "status": "Kassenprüferin",
+        "description": "Und damit in der Kasse wirklich alles stimmt schaut Karin als Kassenprüferin ebenfalls über die Zahlen, wickelt aber auch alles rund um die DTU Startpässe ab. ",
+        "image": "karin"
     },
 
     {
         "id": "7",
+        "name": "Albert Florack",
+        "status": "Stellv. Kassenprüfer",
+        "description": "In einem Verein muss vieles gut organisiert sein. So füllt Albert die Rolle des stellvertretenden Kassenprüfers gewissenhaft aus.",
+        "image": "albert"
+    },
+    
+    
+
+    {
+        "id": "8",
         "name": "Michael Ochmann",
         "status": "Leitung Leistungssport",
+        "description": "Michi hat vor kurzem die Leitungs des Teams Leistungssport übernommen und wird unsere Athletinnen & Athleten auf die Ligawettkämpfe vorbereiten. Klares Ziel sind Aufstiege in höhere Ligen.",
         "image": "michi"
     },
     
     {
-        "id": "8",
+        "id": "9",
         "name": "Ingmar Klusman",
-        "status": "Leitung Leistungssport",
+        "status": "Leitung Ligabetrieb Leistungssport",
+        "description": "Leitet bei uns den Ligabetrieb der Herren im Leitungssportbereich. Dank erfolgreich bestandener Trainerausbildung wird er demnächst auch als Trainer eingreifen. Selber startet er in unseren Ligateams und auf allen Distanzen bis zum Ironman.",
         "image": "ingmar"
     },
     
     {
-        "id": "9",
+        "id": "10",
         "name": "Alex Jasch",
-        "status": "Leitung Leistungssport",
+        "status": "Trainer Leistungssport",
+        "description": "Alex - Urgewalt in der Triathlonszene, Ligastarter und vor allem einer der Trainer für unseren Leistungssportbereich.",
         "image": "alex"
     },
     
     {
-        "id": "10",
+        "id": "11",
         "name": "Jens Raspe",
-        "status": "Leitung Leistungssport",
+        "status": "Trainer Athletik / Swimmen / Laufen",
+        "description": "Sowohl seine (virtuellen) Athletik-, aber auch Schwimm- & Lauftrainings sind geliebt und teils gefürchtet :-). Neben seier Ausrichtung als Trainer für unseren Leistungssportbereich, ist er auch selber auf allen Distanzen unterwegs.",
         "image": "jens"
     },
     
     {
-        "id": "11",
-        "name": "Kathy Manno",
-        "status": "Leitung Leistungssport",
-        "image": "kathy"
-    },
-    
-    {
         "id": "12",
-        "name": "Karin Hörmann",
-        "status": "Leitung Leistungssport",
-        "image": "karin"
+        "name": "Oliver Plum",
+        "status": "Trainer",
+        "description": "Langjähriges Mitglied, Coach und mit Erfahrungen aus allen Formaten gesegnet. Im übrigen toller Motivator, so bekommen TTD'ler vor großen  Wettkämpfen gerne nochmal eine WhatsApp mit besten Wünschen.",
+        "image": "oli"
     },
     
     {
         "id": "13",
-        "name": "Kea Klusmann",
-        "status": "Leitung Leistungssport",
+        "name": "Kathleen Manno",
+        "status": "Trainerin 'Kids",
+        "description": "Ist bei uns Trainerin und speziell für unsere TRI-Kids zuständig. Ihre Lauf- und aktuell auch Zoom-Athletik-Sessions sind aber für alle TTD'ler ein essentieller Teil des Trainings.",
+        "image": "kathy"
+    },
+    
+    
+    
+    {
+        "id": "14",
+        "name": "Katharina Klusmann",
+        "status": "Leitung Ligabetrieb Damen",
+        "description": "Katharina ist selber Triathletin & bei uns für den Ligabetrieb der Damen zuständig.",
         "image": "kea"
     },
     
     {
-        "id": "14",
+        "id": "15",
         "name": "Stefan Gartner",
-        "status": "Leitung Leistungssport",
-        "image": "kea"
+        "status": "Leitung Ligabetrieb Breitensport",
+        "description": "Stefan ist bei uns für den Ligabetrieb der Herren im Breitensport zuständig. Fast sinnlos zu erwähnen, dass er natürlich auch selber Triathlon macht :-).",
+        "image": "stefan"
     }
     
     

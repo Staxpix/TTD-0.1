@@ -46,7 +46,7 @@ struct PersonsCardView: View {
 
                 Text(status)
                     .frame(maxWidth: 240)
-                    .font(.caption)
+                    .font(.callout)
                     .padding(12)
                     .multilineTextAlignment(.center)
                     .lineLimit(3)

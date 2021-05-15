@@ -21,7 +21,7 @@ struct PersonsLazyGrid: View {
                 ScrollView {
                     LazyVGrid(columns: gridItems, spacing: 16, content: {
                         ForEach(persons, id: \.id) { persons in
-                            PersonFlipCard(name: persons.name, status: persons.status, image: persons.image)
+                            PersonFlipCard(name: persons.name, status: persons.status, description: persons.description, image: persons.image)
                         }.padding(.leading, 30)
                     })
                 }

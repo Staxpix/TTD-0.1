@@ -71,6 +71,8 @@
 		78D6B09F26458B1D00CB3494 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D6B09C26458B1D00CB3494 /* Models.swift */; };
 		78D6B0A126458B1D00CB3494 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D6B09E26458B1D00CB3494 /* ViewModel.swift */; };
 		78DC8B73264DA021004E37DE /* MediumRunTrainingsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DC8B72264DA021004E37DE /* MediumRunTrainingsData.swift */; };
+		78DC8B76264EB680004E37DE /* FAQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DC8B75264EB680004E37DE /* FAQ.swift */; };
+		78DC8B78264EBC9E004E37DE /* FAQDisGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DC8B77264EBC9E004E37DE /* FAQDisGroupView.swift */; };
 		78EABB05264ABF4800AF7268 /* ContentView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EABB04264ABF4800AF7268 /* ContentView2.swift */; };
 		78EABB09264B231600AF7268 /* SpotsImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EABB08264B231600AF7268 /* SpotsImageView.swift */; };
 		78EABB0B264BAA1D00AF7268 /* SpotInsetGallery2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EABB0A264BAA1D00AF7268 /* SpotInsetGallery2.swift */; };
@@ -148,6 +150,8 @@
 		78D6B09C26458B1D00CB3494 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		78D6B09E26458B1D00CB3494 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		78DC8B72264DA021004E37DE /* MediumRunTrainingsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumRunTrainingsData.swift; sourceTree = "<group>"; };
+		78DC8B75264EB680004E37DE /* FAQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQ.swift; sourceTree = "<group>"; };
+		78DC8B77264EBC9E004E37DE /* FAQDisGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQDisGroupView.swift; sourceTree = "<group>"; };
 		78EABAFE264ABF0500AF7268 /* ContentView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView2.swift; sourceTree = "<group>"; };
 		78EABB04264ABF4800AF7268 /* ContentView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView2.swift; path = ../Alt/ContentView2.swift; sourceTree = "<group>"; };
 		78EABB08264B231600AF7268 /* SpotsImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotsImageView.swift; sourceTree = "<group>"; };
@@ -197,6 +201,7 @@
 		78259FBF2623525E00D1568B /* Alt */ = {
 			isa = PBXGroup;
 			children = (
+				782CDD4D26392C6F00AC53B1 /* PersonsLazyGrid.swift */,
 				78EABB0A264BAA1D00AF7268 /* SpotInsetGallery2.swift */,
 				78C6D1EC263C96FA00AAAF68 /* SpotInsetGallery.swift */,
 				78A6EC9F2639D2340034E2B8 /* WorkOutTest.swift */,
@@ -243,6 +248,7 @@
 		7829D3872621A5C3003BFE0A /* TTD-0.1 */ = {
 			isa = PBXGroup;
 			children = (
+				78DC8B74264EB666004E37DE /* FAQ */,
 				78D6B09B26458B0100CB3494 /* Weather */,
 				7829D3BA2621AB4D003BFE0A /* Extensions */,
 				7829D39E2621A61F003BFE0A /* StartTabView */,
@@ -302,7 +308,6 @@
 				7829D3AE2621A7A2003BFE0A /* PersonsCardView.swift */,
 				78FC85FD2628D813000A6F9B /* PersonsCardBackView.swift */,
 				78FC86012628D9D4000A6F9B /* PersonsViewFlipOverview.swift */,
-				782CDD4D26392C6F00AC53B1 /* PersonsLazyGrid.swift */,
 			);
 			path = Persons;
 			sourceTree = "<group>";
@@ -393,6 +398,15 @@
 				78EABB04264ABF4800AF7268 /* ContentView2.swift */,
 			);
 			path = Weather;
+			sourceTree = "<group>";
+		};
+		78DC8B74264EB666004E37DE /* FAQ */ = {
+			isa = PBXGroup;
+			children = (
+				78DC8B75264EB680004E37DE /* FAQ.swift */,
+				78DC8B77264EBC9E004E37DE /* FAQDisGroupView.swift */,
+			);
+			path = FAQ;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -516,6 +530,7 @@
 				78023D4F262A02AE001F2EB4 /* MapAnnotationView.swift in Sources */,
 				781C371626274E9E0094A4F9 /* PersonsOverviewGeo.swift in Sources */,
 				78709DA6262622E200F73722 /* NewsListHoch.swift in Sources */,
+				78DC8B78264EBC9E004E37DE /* FAQDisGroupView.swift in Sources */,
 				78DC8B73264DA021004E37DE /* MediumRunTrainingsData.swift in Sources */,
 				78023D3E2628E202001F2EB4 /* CoreDataManagerPK.swift in Sources */,
 				7829D3AB2621A6E3003BFE0A /* StartTabView.swift in Sources */,
@@ -527,6 +542,7 @@
 				78023D422628E202001F2EB4 /* DrawingDocument.swift in Sources */,
 				782CDD472635BEC500AC53B1 /* RheinbadTrainingView.swift in Sources */,
 				78023D432628E202001F2EB4 /* PenilKit1.swift in Sources */,
+				78DC8B76264EB680004E37DE /* FAQ.swift in Sources */,
 				780B30732622F47F00F1949E /* MapViewTrainingsLocations.swift in Sources */,
 				78EABB11264D70A500AF7268 /* EasyRunTrainingsData.swift in Sources */,
 				78023D3C2628E202001F2EB4 /* AddNewDocument.swift in Sources */,

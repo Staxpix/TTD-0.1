@@ -10,7 +10,7 @@ import SwiftUI
 struct PersonsCardBackView: View {
     
     let name: String
-     let status: String
+     let description: String
      let image: String
     
     var screenSize = UIScreen.main.bounds
@@ -29,12 +29,12 @@ struct PersonsCardBackView: View {
                     
                     )
 
-            VStack(alignment: .center ,spacing: 60) {
+            VStack(alignment: .center ,spacing: 30) {
                 
                 Text(name)
                     
                     .font(.title2)
-                    .padding(.top, 20)
+                    .padding()
                     .rotation3DEffect(
                         .degrees(180),
                         axis: (x: 0.0, y: 1.0, z: 0.0)
@@ -44,29 +44,32 @@ struct PersonsCardBackView: View {
                 Image(image)
                     
                     .resizable()
+                    
                     .clipShape(Circle())
                     .scaledToFit()
+                    
                     .frame(maxWidth: 150, maxHeight: 150)
                     .padding(12)
                     .background(Color.ttdWhite)
                     .clipShape(Circle())
                     .shadow(color: Color.gray.opacity(0.5), radius: 10, x: 10, y: 12)
                     
-                    .offset(y: -30)
+                    
                     .rotation3DEffect(
                         .degrees(180),
                         axis: (x: 0.0, y: 1.0, z: 0.0)
                         
                         )
+                    
 
                 
                 
-                Text(status)
-                    .frame(maxWidth: 240)
-                    .font(.caption)
+                Text(description)
+                    .frame(width: 240, height: 160, alignment: .center)
+                    .font(.footnote)
                     .padding(12)
                     .multilineTextAlignment(.center)
-                    .lineLimit(5)
+                    .lineLimit(nil)
                     .rotation3DEffect(
                         .degrees(180),
                         axis: (x: 0.0, y: 1.0, z: 0.0)
@@ -75,7 +78,8 @@ struct PersonsCardBackView: View {
                 
 
 
-            }
+            }.frame(width: 360, height: 550, alignment: .center)
+            
  
         }.frame(width: 360, height: 550, alignment: .center)
     }
@@ -83,6 +87,6 @@ struct PersonsCardBackView: View {
 
 struct PersonsCardBackView_Previews: PreviewProvider {
     static var previews: some View {
-        PersonsCardBackView(name: "", status: "", image: "")
+        PersonsCardBackView(name: "jfdkal kfdaö", description: "Langjähriges Mitglied, Coach und mit Erfahrungen aus allen Formaten gesegnet. Im übrigen toller Motivator, so bekommen TTD'ler vor großen  Wettkämpfen gerne nochmal eine WhatsApp mit besten Wünschen.", image: "oli")
     }
 }

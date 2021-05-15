@@ -42,7 +42,7 @@ struct PersonsViewFlipOverview: View {
                             
                             LazyVGrid(columns: gridItems, spacing: 16, content: {
                                 ForEach(persons[0...6], id: \.id) { persons in
-                                    PersonFlipCard(name: persons.name, status: persons.status, image: persons.image)
+                                    PersonFlipCard(name: persons.name, status: persons.status, description: persons.description, image: persons.image)
                                 }.padding(.leading, 30)
                             })
                         }
@@ -65,8 +65,8 @@ struct PersonsViewFlipOverview: View {
                         ScrollView(.horizontal, showsIndicators: false) {
                             
                             LazyVGrid(columns: gridItems, spacing: 16, content: {
-                                ForEach(persons[7...13], id: \.id) { persons in
-                                    PersonFlipCard(name: persons.name, status: persons.status, image: persons.image)
+                                ForEach(persons[7...14], id: \.id) { persons in
+                                    PersonFlipCard(name: persons.name, status: persons.status, description: persons.description, image: persons.image)
                                 }.padding(.leading, 30)
                             })
                         }
@@ -93,7 +93,8 @@ struct PersonFlipCard: View {
     @State var isFlipped: Bool = true
     
     var name : String
-    var status : String
+    var status: String
+    var description: String
     var image : String
     
     var body: some View {
@@ -104,7 +105,7 @@ struct PersonFlipCard: View {
                         PersonsCardView(name: name, status: status, image: image)
                         
                     } else {
-                        PersonsCardBackView(name: name, status: status, image: image)
+                        PersonsCardBackView(name: name, description: description, image: image)
                         
                     }
                 }

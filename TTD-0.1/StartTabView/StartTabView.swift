@@ -67,6 +67,14 @@ struct StartTabView: View {
                     }
                 }
             
+            FAQ()
+                .tabItem {
+                    VStack {
+                        Image(systemName: "questionmark.circle.fill")
+                        Text("FAQs")
+                    }
+                }
+            
 //            PenilKit1()
 //                .tabItem { VStack {
 //                    Image(systemName: "pencil.circle.fill")
