@@ -26,7 +26,7 @@ struct IntensityEasyRunTrainings {
 // Sammlung EASY
 var allEasyRuns : [EasyRunTrainings] = [
 
-EasyRunTrainings(warmUp: "Leichtes Dehnen und dann 5 Minuten locker einlaufen", main: "5km GA1 - die Steigungen bewusst locker!", coolDown: "10 min locker auslaufen", intensity: IntensityEasyRunTrainings(short: "2 Minuten", long: "5 Minuten")),
+EasyRunTrainings(warmUp: "Leichtes Dehnen und dann 5 Minuten locker einlaufenLeichtes Dehnen und dann 5 Minuten locker einlaufenLeichtes Dehnen und dann 5 Minuten locker einlaufen", main: "5km GA1 - die SteLeichtes Dehnen und dann 5 Minuten locker einlaufenLeichtes Dehnen und dann 5 Minuten locker einlaufenigungen bewusst locker!", coolDown: "10 min lockeLeichtes Dehnen und dann 5 Minuten locker einlaufenr auslaufen", intensity: IntensityEasyRunTrainings(short: "2 Minuten", long: "5 Minuten")),
     
 EasyRunTrainings(warmUp: "10 Minuten locker einlaufen. Ein paar Hopser-Sprünge einbauen.", main: "10km GA1", coolDown: "8 min locker auslaufen.", intensity: IntensityEasyRunTrainings(short: "4 Minuten", long: "10 Minuten")),
     

@@ -75,3 +75,6 @@ struct NewsListLazy_Previews: PreviewProvider {
         NewsListLazy()
     }
 }
+
+
+//ForEach(newsOnline.sorted { $1.date > $0.date})

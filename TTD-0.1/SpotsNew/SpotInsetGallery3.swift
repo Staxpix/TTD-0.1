@@ -23,7 +23,7 @@ struct SpotInsetGallery3: View {
         
         ScrollView(.horizontal, showsIndicators: false) {
             
-            HStack(alignment: .center, spacing: 25) {
+            HStack(alignment: .center, spacing: 30) {
                 
                 
                 ForEach(spots.gallery, id: \.self) { item in

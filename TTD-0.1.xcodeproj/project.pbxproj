@@ -26,6 +26,10 @@
 		780C167A26500AF500DD5C8C /* MediumSwimTrainings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780C167926500AF500DD5C8C /* MediumSwimTrainings.swift */; };
 		780C167C26500B8100DD5C8C /* HardSwimTrainings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780C167B26500B8100DD5C8C /* HardSwimTrainings.swift */; };
 		780C167E26500BE200DD5C8C /* RandomSwimView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780C167D26500BE200DD5C8C /* RandomSwimView.swift */; };
+		780C16852650185E00DD5C8C /* EasyBikeTrainings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780C16842650185E00DD5C8C /* EasyBikeTrainings.swift */; };
+		780C16872650186F00DD5C8C /* MediumBikeTrainings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780C16862650186F00DD5C8C /* MediumBikeTrainings.swift */; };
+		780C16892650187D00DD5C8C /* HardBikeTrainings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780C16882650187D00DD5C8C /* HardBikeTrainings.swift */; };
+		780C168B2650199A00DD5C8C /* RandomBikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780C168A2650199A00DD5C8C /* RandomBikeView.swift */; };
 		7819F9642630A97D00B8537E /* NewsListCell3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7819F9632630A97D00B8537E /* NewsListCell3D.swift */; };
 		781C371626274E9E0094A4F9 /* PersonsOverviewGeo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781C371526274E9E0094A4F9 /* PersonsOverviewGeo.swift */; };
 		7829D3892621A5C3003BFE0A /* TTD_0_1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7829D3882621A5C3003BFE0A /* TTD_0_1App.swift */; };
@@ -48,8 +52,11 @@
 		782CDD4E26392C6F00AC53B1 /* PersonsLazyGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782CDD4D26392C6F00AC53B1 /* PersonsLazyGrid.swift */; };
 		782CDD51263932D400AC53B1 /* NewsListLazy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782CDD50263932D400AC53B1 /* NewsListLazy.swift */; };
 		783D0D0D262F5E7700EEC63C /* NewsListCell2.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783D0D0C262F5E7700EEC63C /* NewsListCell2.0.swift */; };
+		78440A932651437500520229 /* RandomWorkout2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78440A922651437500520229 /* RandomWorkout2.swift */; };
 		784C0AC0263495FF0054F98B /* HomeScreen2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784C0ABF263495FF0054F98B /* HomeScreen2.swift */; };
 		785141722622F08800C93D08 /* Trainingszeiten.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785141712622F08800C93D08 /* Trainingszeiten.swift */; };
+		785894B72655239F00788449 /* MapAnnotationViewBackup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785894B62655239F00788449 /* MapAnnotationViewBackup.swift */; };
+		785894B926554E8E00788449 /* SpotsMapViewLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785894B826554E8E00788449 /* SpotsMapViewLinks.swift */; };
 		78709D982626157000F73722 /* NewsModelOnline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78709D972626157000F73722 /* NewsModelOnline.swift */; };
 		78709D9B26261AA600F73722 /* NewsListOnline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78709D9A26261AA600F73722 /* NewsListOnline.swift */; };
 		78709DA32626224A00F73722 /* NewsListCellHoch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78709DA22626224A00F73722 /* NewsListCellHoch.swift */; };
@@ -108,6 +115,10 @@
 		780C167926500AF500DD5C8C /* MediumSwimTrainings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumSwimTrainings.swift; sourceTree = "<group>"; };
 		780C167B26500B8100DD5C8C /* HardSwimTrainings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardSwimTrainings.swift; sourceTree = "<group>"; };
 		780C167D26500BE200DD5C8C /* RandomSwimView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomSwimView.swift; sourceTree = "<group>"; };
+		780C16842650185E00DD5C8C /* EasyBikeTrainings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyBikeTrainings.swift; sourceTree = "<group>"; };
+		780C16862650186F00DD5C8C /* MediumBikeTrainings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumBikeTrainings.swift; sourceTree = "<group>"; };
+		780C16882650187D00DD5C8C /* HardBikeTrainings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardBikeTrainings.swift; sourceTree = "<group>"; };
+		780C168A2650199A00DD5C8C /* RandomBikeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomBikeView.swift; sourceTree = "<group>"; };
 		7819F9632630A97D00B8537E /* NewsListCell3D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListCell3D.swift; sourceTree = "<group>"; };
 		781C371526274E9E0094A4F9 /* PersonsOverviewGeo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsOverviewGeo.swift; sourceTree = "<group>"; };
 		7829D3852621A5C3003BFE0A /* TTD-0.1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TTD-0.1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,8 +143,11 @@
 		782CDD4D26392C6F00AC53B1 /* PersonsLazyGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsLazyGrid.swift; sourceTree = "<group>"; };
 		782CDD50263932D400AC53B1 /* NewsListLazy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListLazy.swift; sourceTree = "<group>"; };
 		783D0D0C262F5E7700EEC63C /* NewsListCell2.0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListCell2.0.swift; sourceTree = "<group>"; };
+		78440A922651437500520229 /* RandomWorkout2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomWorkout2.swift; sourceTree = "<group>"; };
 		784C0ABF263495FF0054F98B /* HomeScreen2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen2.swift; sourceTree = "<group>"; };
 		785141712622F08800C93D08 /* Trainingszeiten.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trainingszeiten.swift; sourceTree = "<group>"; };
+		785894B62655239F00788449 /* MapAnnotationViewBackup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotationViewBackup.swift; sourceTree = "<group>"; };
+		785894B826554E8E00788449 /* SpotsMapViewLinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotsMapViewLinks.swift; sourceTree = "<group>"; };
 		78709D972626157000F73722 /* NewsModelOnline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModelOnline.swift; sourceTree = "<group>"; };
 		78709D9A26261AA600F73722 /* NewsListOnline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListOnline.swift; sourceTree = "<group>"; };
 		78709DA22626224A00F73722 /* NewsListCellHoch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListCellHoch.swift; sourceTree = "<group>"; };
@@ -213,6 +227,7 @@
 			children = (
 				780C1675265008FD00DD5C8C /* RandomRunView.swift */,
 				780C167D26500BE200DD5C8C /* RandomSwimView.swift */,
+				780C168A2650199A00DD5C8C /* RandomBikeView.swift */,
 			);
 			path = SubViews;
 			sourceTree = "<group>";
@@ -226,6 +241,9 @@
 				78DC8B72264DA021004E37DE /* MediumRunTrainingsData.swift */,
 				780C167926500AF500DD5C8C /* MediumSwimTrainings.swift */,
 				780C167B26500B8100DD5C8C /* HardSwimTrainings.swift */,
+				780C16842650185E00DD5C8C /* EasyBikeTrainings.swift */,
+				780C16862650186F00DD5C8C /* MediumBikeTrainings.swift */,
+				780C16882650187D00DD5C8C /* HardBikeTrainings.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -233,7 +251,7 @@
 		780C16742650085700DD5C8C /* MainView */ = {
 			isa = PBXGroup;
 			children = (
-				789A52BB2640860400B831C5 /* RandomWorkout.swift */,
+				78440A922651437500520229 /* RandomWorkout2.swift */,
 			);
 			path = MainView;
 			sourceTree = "<group>";
@@ -241,6 +259,8 @@
 		78259FBF2623525E00D1568B /* Alt */ = {
 			isa = PBXGroup;
 			children = (
+				78C1B736263204FE00261AE7 /* SpotsMapView.swift */,
+				789A52BB2640860400B831C5 /* RandomWorkout.swift */,
 				782CDD4D26392C6F00AC53B1 /* PersonsLazyGrid.swift */,
 				78EABB0A264BAA1D00AF7268 /* SpotInsetGallery2.swift */,
 				78C6D1EC263C96FA00AAAF68 /* SpotInsetGallery.swift */,
@@ -367,6 +387,7 @@
 			children = (
 				780B30722622F47F00F1949E /* MapViewTrainingsLocations.swift */,
 				78023D4E262A02AE001F2EB4 /* MapAnnotationView.swift */,
+				785894B62655239F00788449 /* MapAnnotationViewBackup.swift */,
 			);
 			path = Locations;
 			sourceTree = "<group>";
@@ -423,7 +444,7 @@
 			isa = PBXGroup;
 			children = (
 				78C1B73926322B9400261AE7 /* SpotDetailViewMap.swift */,
-				78C1B736263204FE00261AE7 /* SpotsMapView.swift */,
+				785894B826554E8E00788449 /* SpotsMapViewLinks.swift */,
 			);
 			path = Spots;
 			sourceTree = "<group>";
@@ -527,6 +548,7 @@
 				78023D412628E202001F2EB4 /* DrawingDoc.xcdatamodeld in Sources */,
 				78C6D1E4263C94D800AAAF68 /* SpotStart.swift in Sources */,
 				788624C426398026002AFAA1 /* LazyTrainingOverview.swift in Sources */,
+				780C16852650185E00DD5C8C /* EasyBikeTrainings.swift in Sources */,
 				78EABB09264B231600AF7268 /* SpotsImageView.swift in Sources */,
 				780B30792623189500F1949E /* NewsListQuer.swift in Sources */,
 				7829D3B82621AA28003BFE0A /* PersonsOverview.swift in Sources */,
@@ -535,11 +557,13 @@
 				78C1B73A26322B9400261AE7 /* SpotDetailViewMap.swift in Sources */,
 				78B1273926359C8500D69CA7 /* TrainingDayFlipCell.swift in Sources */,
 				78D366F72630185C0075C30D /* NewsList2.0.swift in Sources */,
+				780C16892650187D00DD5C8C /* HardBikeTrainings.swift in Sources */,
 				78FC85FE2628D813000A6F9B /* PersonsCardBackView.swift in Sources */,
 				78023D442628E202001F2EB4 /* PlaceholderView.swift in Sources */,
 				780C1676265008FD00DD5C8C /* RandomRunView.swift in Sources */,
 				7829D3A82621A64A003BFE0A /* PersonsModel.swift in Sources */,
 				7829D3A62621A64A003BFE0A /* DecodeJSON.swift in Sources */,
+				785894B926554E8E00788449 /* SpotsMapViewLinks.swift in Sources */,
 				78D6B0A126458B1D00CB3494 /* ViewModel.swift in Sources */,
 				78EABB0F264D6E7B00AF7268 /* HardRunTrainingsData.swift in Sources */,
 				7829D38B2621A5C3003BFE0A /* ContentView.swift in Sources */,
@@ -552,6 +576,7 @@
 				78D6B09F26458B1D00CB3494 /* Models.swift in Sources */,
 				78C1B737263204FE00261AE7 /* SpotsMapView.swift in Sources */,
 				780C167E26500BE200DD5C8C /* RandomSwimView.swift in Sources */,
+				780C16872650186F00DD5C8C /* MediumBikeTrainings.swift in Sources */,
 				7829D3B22621A86F003BFE0A /* HomeScreen.swift in Sources */,
 				783D0D0D262F5E7700EEC63C /* NewsListCell2.0.swift in Sources */,
 				784C0AC0263495FF0054F98B /* HomeScreen2.swift in Sources */,
@@ -576,6 +601,7 @@
 				78DC8B78264EBC9E004E37DE /* FAQDisGroupView.swift in Sources */,
 				78DC8B73264DA021004E37DE /* MediumRunTrainingsData.swift in Sources */,
 				78023D3E2628E202001F2EB4 /* CoreDataManagerPK.swift in Sources */,
+				785894B72655239F00788449 /* MapAnnotationViewBackup.swift in Sources */,
 				7829D3AB2621A6E3003BFE0A /* StartTabView.swift in Sources */,
 				78C6D1EA263C94FC00AAAF68 /* SpotStartListItem.swift in Sources */,
 				78A6ECA02639D2340034E2B8 /* WorkOutTest.swift in Sources */,
@@ -586,6 +612,7 @@
 				782CDD472635BEC500AC53B1 /* RheinbadTrainingView.swift in Sources */,
 				78023D432628E202001F2EB4 /* PenilKit1.swift in Sources */,
 				780C16782650098800DD5C8C /* EasySwimTrainings.swift in Sources */,
+				780C168B2650199A00DD5C8C /* RandomBikeView.swift in Sources */,
 				78DC8B76264EB680004E37DE /* FAQ.swift in Sources */,
 				780B30732622F47F00F1949E /* MapViewTrainingsLocations.swift in Sources */,
 				78EABB11264D70A500AF7268 /* EasyRunTrainingsData.swift in Sources */,
@@ -594,6 +621,7 @@
 				7829D3AF2621A7A2003BFE0A /* PersonsCardView.swift in Sources */,
 				782CDD4A2635BF6000AC53B1 /* THBTrainingView.swift in Sources */,
 				780B30762623141800F1949E /* NewsListCellQuer.swift in Sources */,
+				78440A932651437500520229 /* RandomWorkout2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  RandomRunView.swift
+//  RandomBikeView.swift
 //  TTD-0.1
 //
 //  Created by Daniel Enning on 15.05.21.
@@ -7,44 +7,35 @@
 
 import SwiftUI
 
-
-
-struct RandomRunView_Previews: PreviewProvider {
-    static var previews: some View {
-        RandomRunView()
-    }
-}
-
-
-struct RandomRunView: View {
+struct RandomBikeView: View {
     
     // Array für Auswahl im Picker
-    let auswahlRun : [String] = ["Easy", "Medium", "Hard"]
+    let auswahlBike : [String] = ["Technik", "Sprints", "Ausdauer"]
     
     // Variable "Selection" im Picker für "Run"
-    @State private var selectedRun = 1
+    @State private var selectedBike = 1
     
     // Variable Temporäre Auswahl zur Übergabe an Button
     var selectedFromPicker : String = ""
     
     // Variable Temporär Random Training "Run"
-    @State var randomRunTempWarmUp : String = ""
-    @State var randomRunTempMain : String = ""
-    @State var randomRunTempCoolDown : String = ""
+    @State var randomBikeTempWarmUp : String = ""
+    @State var randomBikeTempMain : String = ""
+    @State var randomBikeTempCoolDown : String = ""
     
     // Funktion RandomNumber für Auswahl im Array === RUN EASY
-    func tempRandomNumberRunEasy() -> Int {
-        let temRanNum = Int.random(in: 0..<allEasyRuns.count)
+    func tempRandomNumberBikeEasy() -> Int {
+        let temRanNum = Int.random(in: 0..<allEasyBikes.count)
         return temRanNum }
     
     // Funktion RandomNumber für Auswahl im Array === RUN MEDIUM
-    func tempRandomNumberRunMedium() -> Int {
-        let temRanNum = Int.random(in: 0..<allMediumRuns.count)
+    func tempRandomNumberBikeMedium() -> Int {
+        let temRanNum = Int.random(in: 0..<allMediumBikes.count)
         return temRanNum }
     
     // Funktion RandomNumber für Auswahl im Array === RUN HARD
-    func tempRandomNumberRunHard() -> Int {
-        let temRanNum = Int.random(in: 0..<allHardRuns.count)
+    func tempRandomNumberBikeHard() -> Int {
+        let temRanNum = Int.random(in: 0..<allHardBikes.count)
         return temRanNum }
      
     var body: some View {
@@ -54,18 +45,16 @@ struct RandomRunView: View {
         VStack {
             VStack(spacing: 10) {
                 
-                Text("Lauf-Training")
+                Text("Bike-Training")
                     .font(.title2)
                     .fontWeight(.bold)
                     .foregroundColor(.ttdText)
                     .padding(.bottom, 20)
                     .padding(.top, 14)
                 
-                
-                
-                Picker(selection: $selectedRun, label: Text("Picker"), content: {
-                    ForEach(0..<auswahlRun.count) {
-                        Text(auswahlRun[$0])
+                Picker(selection: $selectedBike, label: Text("Picker"), content: {
+                    ForEach(0..<auswahlBike.count) {
+                        Text(auswahlBike[$0])
                     }
                 }).pickerStyle(SegmentedPickerStyle())
                 .padding(.horizontal)
@@ -73,26 +62,26 @@ struct RandomRunView: View {
                 
                 //                    Text("\(auswahlRun[selectedRun])")
                 
-                let selectedFromPicker = auswahlRun[selectedRun]
+                let selectedFromPicker = auswahlBike[selectedBike]
                 
                 Button(action: {
                     
-                    if selectedFromPicker == "Easy" {
-                        let temRanNum = tempRandomNumberRunEasy()
-                        randomRunTempWarmUp = "\(allEasyRuns[temRanNum].warmUp)"
-                        randomRunTempMain = "\(allEasyRuns[temRanNum].main)"
-                        randomRunTempCoolDown = "\(allEasyRuns[temRanNum].coolDown)"
+                    if selectedFromPicker == "Technik" {
+                        let temRanNum = tempRandomNumberBikeEasy()
+                        randomBikeTempWarmUp = "\(allEasyBikes[temRanNum].warmUp)"
+                        randomBikeTempMain = "\(allEasyBikes[temRanNum].main)"
+                        randomBikeTempCoolDown = "\(allEasyBikes[temRanNum].coolDown)"
                         
-                    } else if selectedFromPicker == "Medium" {
-                        let temRanNum = tempRandomNumberRunMedium()
-                        randomRunTempWarmUp = "\(allMediumRuns[temRanNum].warmUp)"
-                        randomRunTempMain = "\(allMediumRuns[temRanNum].main)"
-                        randomRunTempCoolDown = "\(allMediumRuns[temRanNum].coolDown)"
-                    } else if selectedFromPicker == "Hard" {
-                        let temRanNum = tempRandomNumberRunHard()
-                        randomRunTempWarmUp = "\(allHardRuns[temRanNum].warmUp)"
-                        randomRunTempMain = "\(allHardRuns[temRanNum].main)"
-                        randomRunTempCoolDown = "\(allHardRuns[temRanNum].coolDown)"
+                    } else if selectedFromPicker == "Sprints" {
+                        let temRanNum = tempRandomNumberBikeMedium()
+                        randomBikeTempWarmUp = "\(allMediumBikes[temRanNum].warmUp)"
+                        randomBikeTempMain = "\(allMediumBikes[temRanNum].main)"
+                        randomBikeTempCoolDown = "\(allMediumBikes[temRanNum].coolDown)"
+                    } else if selectedFromPicker == "Ausdauer" {
+                        let temRanNum = tempRandomNumberBikeHard()
+                        randomBikeTempWarmUp = "\(allHardBikes[temRanNum].warmUp)"
+                        randomBikeTempMain = "\(allHardBikes[temRanNum].main)"
+                        randomBikeTempCoolDown = "\(allHardBikes[temRanNum].coolDown)"
                     }
                     
                 }, label: {
@@ -128,14 +117,14 @@ struct RandomRunView: View {
                                 VStack(spacing: 6){
                                     Text("Warm-Up:")
                                         .bold()
-                                    Text("\(randomRunTempWarmUp)")
+                                    Text("\(randomBikeTempWarmUp)")
                                         .fontWeight(.medium)
                                 }.multilineTextAlignment(.center)
                                 
                                 VStack(spacing: 6){
                                     Text("Main:")
                                         .bold()
-                                    Text("\(randomRunTempMain)")
+                                    Text("\(randomBikeTempMain)")
                                         .fontWeight(.medium)
                                 }.multilineTextAlignment(.center)
                                 
@@ -143,13 +132,11 @@ struct RandomRunView: View {
                                 VStack(spacing: 6){
                                     Text("Cool-Down:")
                                         .bold()
-                                    Text("\(randomRunTempCoolDown)")
+                                    Text("\(randomBikeTempCoolDown)")
                                         .fontWeight(.medium)
                                 }.multilineTextAlignment(.center)
                             }.fixedSize(horizontal: false, vertical: true)
-                            
-                        }
-                        .frame(width: 300, alignment: .center)
+                        }.frame(width: 300, alignment: .center)
                         .animation(.interactiveSpring(response: 1, dampingFraction: 1, blendDuration: 3))
                     }.frame(width: 300, height: 240, alignment: .center)
                 }
@@ -167,7 +154,7 @@ struct RandomRunView: View {
                 Text("Viel Spaß!")
                     .bold()
                     .padding(.top, 14)
-                    .padding(.bottom, 10)
+                    .padding(.bottom, 20)
                 
                 DisclosureGroup(
                     content: { Text("ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent")
@@ -179,9 +166,7 @@ struct RandomRunView: View {
                 .frame(width: 280, alignment: .center)
             }
             
-            
-            // Swim
-            
+          
             
             
             
@@ -195,9 +180,11 @@ struct RandomRunView: View {
         .shadow(color: Color.gray.opacity(0.1), radius: 10, x: -2, y: -2)
         .padding(40)
         .padding(.leading, 25)
-        
-        
-        
     }
 }
 
+struct RandomBikeView_Previews: PreviewProvider {
+    static var previews: some View {
+        RandomBikeView()
+    }
+}

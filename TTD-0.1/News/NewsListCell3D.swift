@@ -43,20 +43,21 @@ struct NewsListCell3D: View {
                     .scaledToFit()
                     .cornerRadius(25)
                     .rotation3DEffect(
-                        .degrees(20),
-                        axis: (x: 0.5, y: 0.0, z: 0.0)
+                        .degrees(10),
+                        axis: (x: 1.0, y: 1.0, z: 0.0)
                         
                     ).padding(12)
                     .frame(maxWidth: screenSize.width * 0.4, maxHeight: screenSize.height * 0.2, alignment: .center)
-                    .clipShape(RoundedRectangle(cornerRadius: 25.0))
+//                    .clipShape(RoundedRectangle(cornerRadius: 25.0))
                     .shadow(color: Color.gray.opacity(0.3), radius: 15, x: 10, y: 10)
                     .shadow(color: Color.gray.opacity(0.1), radius: 15, x: -10, y: -10)
                     .padding(4)
+                    .offset(x: 10, y: 10.0)
                 
 //                Divider()
                 
                 
-                    
+                    Spacer()
                     
                 
 //
@@ -70,7 +71,7 @@ struct NewsListCell3D: View {
                     
                     
                 }// V
-                .frame(minWidth: screenSize.width * 0.4,  maxWidth: screenSize.width * 0.6, maxHeight: screenSize.height * 0.45, alignment: .center)
+                .frame(minWidth: screenSize.width * 0.5,  maxWidth: screenSize.width * 0.6, maxHeight: screenSize.height * 0.45, alignment: .center)
                 
                 
                 

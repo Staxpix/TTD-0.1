@@ -26,10 +26,12 @@ struct SpotsMapView: View {
     
     var body: some View {
  
+        
         Map(coordinateRegion: $regionSpots, annotationItems: locationsSpots, annotationContent: {
             item in
 
             MapAnnotation(coordinate: item.locationsSpots) {
+                
                 MapAnnotationView(spotName: item.headline)
             }
             

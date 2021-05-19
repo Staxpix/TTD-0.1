@@ -47,7 +47,7 @@ struct StartTabView: View {
             
         
             
-            SpotsMapView()
+            SpotsMapViewLinks()
                 .tabItem { VStack {
                     Image(systemName: "mappin.circle.fill")
                     Text("Spots Map")
@@ -59,7 +59,7 @@ struct StartTabView: View {
                     Text("Trainer")
                 } }
             
-            RandomWorkout()
+            RandomWorkout2()
                 .tabItem {
                     VStack {
                         Image(systemName: "chart.bar.doc.horizontal.fill")

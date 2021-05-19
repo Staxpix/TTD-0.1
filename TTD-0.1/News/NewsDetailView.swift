@@ -39,8 +39,8 @@ struct NewsDetailView: View {
                             .scaledToFit()
                             .cornerRadius(25)
                             .rotation3DEffect(
-                                .degrees(20),
-                                axis: (x: 0.5, y: 0.0, z: 0.0)
+                                .degrees(10),
+                                axis: (x: 0.0, y: 0.0, z: 0.0)
                                 
                             ).padding(.top, 10)
                             .shadow(color: Color.gray.opacity(0.3), radius: 10, x: 10, y: 10)

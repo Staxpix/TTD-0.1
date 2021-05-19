@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct NewsOnline: Codable, Identifiable {
+struct NewsOnline: Codable, Identifiable, Hashable {
     var id: String
     var headline: String
     var date: String

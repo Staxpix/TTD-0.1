@@ -10,7 +10,7 @@ import SwiftUI
 struct RandomSwimView: View {
     
     // Array für Auswahl im Picker
-    let auswahlSwim : [String] = ["Easy", "Medium", "Hard"]
+    let auswahlSwim : [String] = ["Technik", "Sprints", "Ausdauer"]
     
     // Variable "Selection" im Picker für "Run"
     @State private var selectedSwim = 1
@@ -50,6 +50,7 @@ struct RandomSwimView: View {
                     .fontWeight(.bold)
                     .foregroundColor(.ttdText)
                     .padding(.bottom, 20)
+                    .padding(.top, 14)
                 
                 Picker(selection: $selectedSwim, label: Text("Picker"), content: {
                     ForEach(0..<auswahlSwim.count) {
@@ -65,18 +66,18 @@ struct RandomSwimView: View {
                 
                 Button(action: {
                     
-                    if selectedFromPicker == "Easy" {
+                    if selectedFromPicker == "Technik" {
                         let temRanNum = tempRandomNumberSwimEasy()
                         randomSwimTempWarmUp = "\(allEasySwims[temRanNum].warmUp)"
                         randomSwimTempMain = "\(allEasySwims[temRanNum].main)"
                         randomSwimTempCoolDown = "\(allEasySwims[temRanNum].coolDown)"
                         
-                    } else if selectedFromPicker == "Medium" {
+                    } else if selectedFromPicker == "Sprints" {
                         let temRanNum = tempRandomNumberSwimMedium()
                         randomSwimTempWarmUp = "\(allMediumSwims[temRanNum].warmUp)"
                         randomSwimTempMain = "\(allMediumSwims[temRanNum].main)"
                         randomSwimTempCoolDown = "\(allMediumSwims[temRanNum].coolDown)"
-                    } else if selectedFromPicker == "Hard" {
+                    } else if selectedFromPicker == "Ausdauer" {
                         let temRanNum = tempRandomNumberSwimHard()
                         randomSwimTempWarmUp = "\(allHardSwims[temRanNum].warmUp)"
                         randomSwimTempMain = "\(allHardSwims[temRanNum].main)"
@@ -103,54 +104,66 @@ struct RandomSwimView: View {
                     .padding(2)
                     .background(Color.ttdWhite)
                     .cornerRadius(25)
-                    .shadow(color: Color.gray.opacity(0.3), radius: 10, x: 10, y: 10)
+                    .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 10, y: 10)
                     .shadow(color: Color.gray.opacity(0.1), radius: 10, x: -2, y: -2)
                 })
                 
                 VStack(alignment: .center, spacing: 22) {
                     
-                    VStack(alignment: .center){
-                        
-                        VStack(alignment: .center, spacing: 40){
-                            VStack(spacing: 6){
-                                Text("Warm-Up:")
-                                    .bold()
-                                Text("\(randomSwimTempWarmUp)")
-                                    .fontWeight(.medium)
-                            }.multilineTextAlignment(.center)
+                    ScrollView(showsIndicators: false) {
+                        VStack(alignment: .center){
                             
-                            VStack(spacing: 6){
-                                Text("Main:")
-                                    .bold()
-                                Text("\(randomSwimTempMain)")
-                                    .fontWeight(.medium)
-                            }.multilineTextAlignment(.center)
-                            
-                            
-                            VStack(spacing: 6){
-                                Text("Cool-Down:")
-                                    .bold()
-                                Text("\(randomSwimTempCoolDown)")
-                                    .fontWeight(.medium)
-                            }.multilineTextAlignment(.center)
-                        }
-                    }.frame(width: 300, height: 280, alignment: .center)
-                    .animation(.interactiveSpring(response: 1, dampingFraction: 1, blendDuration: 3))
+                            VStack(alignment: .center, spacing: 40){
+                                VStack(spacing: 6){
+                                    Text("Warm-Up:")
+                                        .bold()
+                                    Text("\(randomSwimTempWarmUp)")
+                                        .fontWeight(.medium)
+                                }.multilineTextAlignment(.center)
+                                
+                                VStack(spacing: 6){
+                                    Text("Main:")
+                                        .bold()
+                                    Text("\(randomSwimTempMain)")
+                                        .fontWeight(.medium)
+                                }.multilineTextAlignment(.center)
+                                
+                                
+                                VStack(spacing: 6){
+                                    Text("Cool-Down:")
+                                        .bold()
+                                    Text("\(randomSwimTempCoolDown)")
+                                        .fontWeight(.medium)
+                                }.multilineTextAlignment(.center)
+                            }.fixedSize(horizontal: false, vertical: true)
+                        }.frame(width: 300, alignment: .center)
+                        .animation(.interactiveSpring(response: 1, dampingFraction: 1, blendDuration: 3))
+                    }.frame(width: 300, height: 240, alignment: .center)
                 }
-                .padding()
+                .padding(50)
                 .font(.callout)
                 .foregroundColor(.ttdText)
                 .multilineTextAlignment(.leading)
-                .frame(width: 340, height: 300, alignment: .center)
+                .frame(width: 310, height: 300, alignment: .center)
                 .background(Color.ttdWhite)
                 .cornerRadius(25)
-                .shadow(color: Color.gray.opacity(0.3), radius: 10, x: 10, y: 10)
+                .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 10, y: 10)
                 .shadow(color: Color.gray.opacity(0.1), radius: 10, x: -2, y: -2)
                 .padding()
                 
                 Text("Viel Spaß!")
                     .bold()
                     .padding(.top, 14)
+                    .padding(.bottom, 20)
+                
+                DisclosureGroup(
+                    content: { Text("ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent")
+                        .font(.footnote)
+                    },
+                    label: { Text("Info") }
+                ).padding(.horizontal)
+                .padding(.bottom, 14)
+                .frame(width: 280, alignment: .center)
             }
             
           
@@ -161,7 +174,12 @@ struct RandomSwimView: View {
             
             
         } // 1. VStack
-        .padding(50)
+        .background(Color.ttdWhite)
+        .cornerRadius(25)
+        .shadow(color: Color.gray.opacity(0.3), radius: 10, x: 10, y: 10)
+        .shadow(color: Color.gray.opacity(0.1), radius: 10, x: -2, y: -2)
+        .padding(40)
+        .padding(.leading, 25)
     }
 }
 
