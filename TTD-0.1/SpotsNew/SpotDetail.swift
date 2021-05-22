@@ -43,7 +43,7 @@ struct SpotDetail: View {
                                 HStack {
                                   
                                     Image(systemName: "map")
-                                        .font(.title3)
+                                        .font(.title2)
                                         .foregroundColor(.ttdText)
                                     
                                 } })
@@ -59,15 +59,17 @@ struct SpotDetail: View {
                         
                         
                         Text(spots.text)
+                            .lineSpacing(5)
                             .lineLimit(nil)
                             .fixedSize(horizontal: false, vertical: true)
-                            .padding()
+                            
+                            .padding(22)
                        
                         VStack {
                             
-                            Text("Short Map")
-                                .font(.title3)
-                                .foregroundColor(.ttdText)
+//                            Text("Short Map")
+//                                .font(.title3)
+//                                .foregroundColor(.ttdText)
                             
                             SpotDetailViewMapInset(coordinates: spots.locationsSpots, spotName: spots.headline)
                                 

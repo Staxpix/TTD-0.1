@@ -77,6 +77,7 @@ struct TrainingCardFrontTHB: View {
             VStack(spacing: 4) {
                 VStack {
                     Text(tag)
+                        .foregroundColor(.ttdText)
                         .font(.headline)
                     Text(uhrzeit)
                 }
@@ -84,6 +85,7 @@ struct TrainingCardFrontTHB: View {
                 Divider()
                 VStack(spacing: 12) {
                     Text(ort)
+                        .foregroundColor(.ttdText)
                         .font(.headline)
              
                     NavigationLink(

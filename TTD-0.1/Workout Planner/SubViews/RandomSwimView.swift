@@ -159,6 +159,7 @@ struct RandomSwimView: View {
                 DisclosureGroup(
                     content: { Text("ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent")
                         .font(.footnote)
+                        .padding()
                     },
                     label: { Text("Info") }
                 ).padding(.horizontal)

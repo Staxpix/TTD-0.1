@@ -88,15 +88,11 @@ struct TrainingDayFlipCell: View {
                                     .fontWeight(.heavy)
                                     .padding()
                             
-                            TrainingCardFlipRheinbadMap(tag: "1", uhrzeit: "1", ort: "Rheinbad", detail: " jfdklaljflsa jfdkla fdkajda fjdakl  fdnkal fd fdjklajdf ")
+                            TrainingCardFlipRheinbadMap(tag: "Sonntag", uhrzeit: "9 Uhr", ort: "THB", detail: "Die flotte Gruppe, meistens geführt von Mitch.")
                             
-                            TrainingCardFlipRheinbadMap(tag: "1", uhrzeit: "1", ort: "Rheinbad", detail: " jfdklaljflsa jfdkla fdkajda fjdakl  fdnkal fd fdjklajdf ")
+                            TrainingCardFlipRheinbadMap(tag: "Sonntag", uhrzeit: "10", ort: "THB", detail: "Teams-Ausfahrt. Mehrere Gruppen für jedes Tempo. In Corona-Zeiten bitte die Anmeldung über Sport-Meo nicht vergessen")
                             
-                            TrainingCardFlipRheinbadMap(tag: "1", uhrzeit: "1", ort: "Rheinbad", detail: " jfdklaljflsa jfdkla fdkajda fjdakl  fdnkal fd fdjklajdf ")
                             
-                            TrainingCardFlipRheinbadMap(tag: "1", uhrzeit: "1", ort: "Rheinbad", detail: " jfdklaljflsa jfdkla fdkajda fjdakl  fdnkal fd fdjklajdf ")
-                            
-                            TrainingCardFlipRheinbadMap(tag: "1", uhrzeit: "1", ort: "Rheinbad", detail: " jfdklaljflsa jfdkla fdkajda fjdakl  fdnkal fd fdjklajdf ")
                             
                                 
                                 

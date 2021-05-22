@@ -19,7 +19,7 @@ struct RandomRunView_Previews: PreviewProvider {
 struct RandomRunView: View {
     
     // Array für Auswahl im Picker
-    let auswahlRun : [String] = ["Easy", "Medium", "Hard"]
+    let auswahlRun : [String] = ["Easy", "Tempo/Bahn", "Race"]
     
     // Variable "Selection" im Picker für "Run"
     @State private var selectedRun = 1
@@ -83,12 +83,12 @@ struct RandomRunView: View {
                         randomRunTempMain = "\(allEasyRuns[temRanNum].main)"
                         randomRunTempCoolDown = "\(allEasyRuns[temRanNum].coolDown)"
                         
-                    } else if selectedFromPicker == "Medium" {
+                    } else if selectedFromPicker == "Tempo/Bahn" {
                         let temRanNum = tempRandomNumberRunMedium()
                         randomRunTempWarmUp = "\(allMediumRuns[temRanNum].warmUp)"
                         randomRunTempMain = "\(allMediumRuns[temRanNum].main)"
                         randomRunTempCoolDown = "\(allMediumRuns[temRanNum].coolDown)"
-                    } else if selectedFromPicker == "Hard" {
+                    } else if selectedFromPicker == "Race" {
                         let temRanNum = tempRandomNumberRunHard()
                         randomRunTempWarmUp = "\(allHardRuns[temRanNum].warmUp)"
                         randomRunTempMain = "\(allHardRuns[temRanNum].main)"
@@ -170,8 +170,9 @@ struct RandomRunView: View {
                     .padding(.bottom, 10)
                 
                 DisclosureGroup(
-                    content: { Text("ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent")
+                    content: { Text("Bei Easy-Läufen ist es wirklich wichtig, dass sie 'Easy' sind. Vor allem an Steigungen sollte man aufpassen (am besten vermeiden!), generell eher langsamer laufen, als man vielleicht könnte. Die Regeneration steht hier im Vordergrund. Gerne ein bisschen Technik oder Stabi einbauen.")
                         .font(.footnote)
+                        .padding()
                     },
                     label: { Text("Info") }
                 ).padding(.horizontal)

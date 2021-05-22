@@ -76,26 +76,33 @@ struct HomeScreen: View {
                 
                 VStack(alignment: .center, spacing: 22) {
                     Text(viewModel.title)
+                        .foregroundColor(.ttdText)
                         .font(.headline)
                     
                     Text(viewModel.description)
+                        .foregroundColor(.ttdText)
                     
                     HStack(alignment: .center, spacing: 22){
                         VStack(alignment: .leading, spacing: 12) {
 //                            Text("Wetter: \(viewModel.main)")
                             Text("Temp: \(Int(viewModel.temp)) °Grad")
+                                .foregroundColor(.ttdText)
                             Text("Gefühlt: \(Int(viewModel.feelsLike)) °Grad")
+                                .foregroundColor(.ttdText)
                         }.multilineTextAlignment(.leading)
                         
                         VStack(alignment: .leading, spacing: 12){
 //                            Text(viewModel.description)
                         
                             Text("Wind: \(Int(1.6 * viewModel.wind)) km/h")
+                                .foregroundColor(.ttdText)
                                 .multilineTextAlignment(.leading)
                             
                             HStack{
                                 Text("Richtung: ")
+                                    .foregroundColor(.ttdText)
                                 Image(systemName: "shift.fill")
+                                    .foregroundColor(.ttdText)
                                     .rotationEffect(.degrees((Double(360 - viewModel.deg))))
                             }.multilineTextAlignment(.leading)
                             

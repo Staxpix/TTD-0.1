@@ -26,6 +26,8 @@ struct SpotStartListItem: View {
                         .degrees(10),
                         axis: (x: 1.0, y: 1.0, z: 0.0)
                     )
+                    .shadow(color: Color.gray.opacity(0.4), radius: 10, x: 10, y: 10)
+                    .shadow(color: Color.gray.opacity(0.2), radius: 10, x: -2, y: -2)
                     .padding(10)
                 
                 VStack(alignment: .leading, spacing: 12) {

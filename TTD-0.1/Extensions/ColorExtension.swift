@@ -12,7 +12,11 @@ extension Color {
 }
 
 extension Color {
-    static let ttdText = Color.init(UIColor(red: 0/255, green: 102/255, blue: 102/255, alpha: 1.0))
+    static let ttdText = Color.init(UIColor(red: 0/255, green: 93/255, blue: 111/255, alpha: 1.0))
 }
+
+//extension Color {
+//    static let ttdText = Color.init(UIColor(red: 0/255, green: 102/255, blue: 102/255, alpha: 1.0))
+//}
 
 //(red: 255, green: 255, blue: 235)

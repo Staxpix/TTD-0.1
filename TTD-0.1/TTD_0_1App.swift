@@ -18,3 +18,5 @@ struct TTD_0_1App: App {
 
 
 //PersonsCardView(name: "fjdkalö", status: "jfdkaö", image: "oli")
+
+

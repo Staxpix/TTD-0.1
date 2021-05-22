@@ -259,6 +259,7 @@
 		78259FBF2623525E00D1568B /* Alt */ = {
 			isa = PBXGroup;
 			children = (
+				78B1273826359C8500D69CA7 /* TrainingDayFlipCell.swift */,
 				78C1B736263204FE00261AE7 /* SpotsMapView.swift */,
 				789A52BB2640860400B831C5 /* RandomWorkout.swift */,
 				782CDD4D26392C6F00AC53B1 /* PersonsLazyGrid.swift */,
@@ -376,7 +377,6 @@
 			isa = PBXGroup;
 			children = (
 				782CDD452635BE4300AC53B1 /* TrainingFlipMapCards */,
-				78B1273826359C8500D69CA7 /* TrainingDayFlipCell.swift */,
 				788624C326398026002AFAA1 /* LazyTrainingOverview.swift */,
 			);
 			path = Trainings;
@@ -759,7 +759,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.2;
+				MARKETING_VERSION = 0.9;
 				PRODUCT_BUNDLE_IDENTIFIER = "staxpix.TTD-0-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -782,7 +782,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.2;
+				MARKETING_VERSION = 0.9;
 				PRODUCT_BUNDLE_IDENTIFIER = "staxpix.TTD-0-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
