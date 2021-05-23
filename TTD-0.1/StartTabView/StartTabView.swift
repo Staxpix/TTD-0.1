@@ -56,14 +56,14 @@ struct StartTabView: View {
             PersonsViewFlipOverview()
                 .tabItem { VStack {
                     Image(systemName: "person.fill")
-                    Text("Trainer")
+                    Text("Das Team")
                 } }
             
             RandomWorkout2()
                 .tabItem {
                     VStack {
                         Image(systemName: "chart.bar.doc.horizontal.fill")
-                        Text("Workout Planner")
+                        Text("TTD-Workouts")
                     }
                 }
             

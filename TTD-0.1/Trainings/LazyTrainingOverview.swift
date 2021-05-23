@@ -20,7 +20,7 @@ struct LazyTrainingOverview: View {
                     .multilineTextAlignment(.center)
                     .padding(.top, 20)
                 
-                ScrollView {
+                ScrollView(showsIndicators : false) {
                     VStack(spacing: -40) {
                         
                         ScrollView(.horizontal) {
@@ -58,7 +58,7 @@ struct LazyTrainingOverview: View {
                             .padding()
                         ////
                         
-                        ScrollView(.horizontal) {
+                        ScrollView(.horizontal, showsIndicators : false) {
                             
                             HStack {
                                 VStack {
@@ -102,7 +102,7 @@ struct LazyTrainingOverview: View {
                             .padding()
                         ////
                         
-                        ScrollView(.horizontal) {
+                        ScrollView(.horizontal, showsIndicators : false) {
                             
                             HStack {
                                 VStack {
