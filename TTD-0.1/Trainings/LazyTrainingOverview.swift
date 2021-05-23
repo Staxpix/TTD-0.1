@@ -23,7 +23,7 @@ struct LazyTrainingOverview: View {
                 ScrollView(showsIndicators : false) {
                     VStack(spacing: -40) {
                         
-                        ScrollView(.horizontal) {
+                        ScrollView(.horizontal, showsIndicators : false) {
                             HStack {
                                 VStack {
                                     Image("ttd-logo")
