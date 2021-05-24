@@ -22,7 +22,7 @@ struct NewsOnline: Codable, Identifiable, Hashable {
 
 class apiCall {
     func getNewsOnline(completion:@escaping ([NewsOnline]) -> ()) {
-        guard let url = URL(string: "https://gravelventure.de/NewsOnline.json") else { return }
+        guard let url = URL(string: "https://gravelventure.de/ttdnews.json") else { return }
         URLSession.shared.dataTask(with: url) { (data, _, _) in
             guard let data = data else {return}
             guard let newsOnline = try? JSONDecoder().decode([NewsOnline].self, from: data) else {fatalError("Hier geht gar nix")}

@@ -14,14 +14,30 @@ struct LazyTrainingOverview: View {
     var body: some View {
         NavigationView {
             VStack {
-                Text("Überblick über unsere Trainingszeiten und Locations")
-                    .font(.title2)
-                    .frame(maxWidth: 340)
-                    .multilineTextAlignment(.center)
-                    .padding(.top, 20)
+                
                 
                 ScrollView(showsIndicators : false) {
                     VStack(spacing: -40) {
+                        Text("Überblick über unsere Trainingszeiten und Locations")
+                                            .font(.title3)
+                                            .frame(maxWidth: 340)
+                                            .multilineTextAlignment(.center)
+                                            .padding( 12)
+                                            .background(
+                                                                                                    Color.ttdWhite
+                                                                                         
+                                                                                                )
+                                                                                                .cornerRadius(25)
+                                                                                                
+                                                                                                .rotation3DEffect(
+                                                                                                                        .degrees(10),
+                                                                                                                        axis: (x: 1.0, y: 1.0, z: 0.0)
+                                                                                                                    )
+                                                                            .shadow(color: Color.gray.opacity(0.3), radius: 10, x: 15, y: 10)
+                                                                            .shadow(color: Color.gray.opacity(0.1), radius: 10, x: -15, y: -10)
+                                            .padding(.leading, 20)
+                                            .padding(.top, 16)
+                                            .padding(.bottom, 20)
                         
                         ScrollView(.horizontal, showsIndicators : false) {
                             HStack {
@@ -35,7 +51,20 @@ struct LazyTrainingOverview: View {
                                     Text("Swim")
                                         .foregroundColor(.ttdText)
                                         .font(.title2)
-                                }.padding(.leading)
+                                        .padding(.bottom, 10)
+                                }.background(
+                                    Color.ttdWhite
+                         
+                                )
+                                .cornerRadius(25)
+                                
+                                .rotation3DEffect(
+                                                        .degrees(10),
+                                                        axis: (x: 1.0, y: 1.0, z: 0.0)
+                                                    )
+            .shadow(color: Color.gray.opacity(0.3), radius: 10, x: 15, y: 10)
+            .shadow(color: Color.gray.opacity(0.1), radius: 10, x: -15, y: -10)
+            .padding(.leading)
                                 
                                 
                                 
@@ -71,7 +100,21 @@ struct LazyTrainingOverview: View {
                                     Text("Run")
                                         .foregroundColor(.ttdText)
                                         .font(.title2)
-                                }.padding(.leading)
+                                        .padding(.bottom, 10)
+                                }
+                                .background(
+                                                        Color.ttdWhite
+                                             
+                                                    )
+                                                    .cornerRadius(25)
+                                                    
+                                                    .rotation3DEffect(
+                                                                            .degrees(10),
+                                                                            axis: (x: 1.0, y: 1.0, z: 0.0)
+                                                                        )
+                                .shadow(color: Color.gray.opacity(0.3), radius: 10, x: 15, y: 10)
+                                .shadow(color: Color.gray.opacity(0.1), radius: 10, x: -15, y: -10)
+                                .padding(.leading)
                                 
                                 
                                 
@@ -115,7 +158,20 @@ struct LazyTrainingOverview: View {
                                     Text("Bike")
                                         .foregroundColor(.ttdText)
                                         .font(.title2)
-                                }.padding(.leading)
+                                        .padding(.bottom, 10)
+                                }.background(
+                                    Color.ttdWhite
+                         
+                                )
+                                .cornerRadius(25)
+                                
+                                .rotation3DEffect(
+                                                        .degrees(10),
+                                                        axis: (x: 1.0, y: 1.0, z: 0.0)
+                                                    )
+            .shadow(color: Color.gray.opacity(0.3), radius: 10, x: 15, y: 10)
+            .shadow(color: Color.gray.opacity(0.1), radius: 10, x: -15, y: -10)
+            .padding(.leading)
                                 
                                 
                                 

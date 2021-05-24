@@ -26,11 +26,11 @@ struct IntensityHardSwimTrainings {
 
 var allHardSwims : [HardSwimTrainings] = [
 
-    HardSwimTrainings(warmUp: "5000m einschwimmen", main: "10x 1000m Sprints", coolDown: "5000m ausschwimmen"),
+    HardSwimTrainings(warmUp: "400m einschwimmen. Dann 400m Technik-Übungen. Zeit lassen & saubere Ausfühung.", main: "6x 400m Grundlage", coolDown: "400m locker ausschwimmen"),
     
-    HardSwimTrainings(warmUp: "6000m einschwimmen", main: "15x 1000m Sprints", coolDown: "6000m ausschwimmen"),
+    HardSwimTrainings(warmUp: "Nach Gefühl einschwimmen, mind. 600m", main: "6x 200m @ 85%. 2x 800m GA-1, wobei jede 4 Bahn deutlich angezogen wird auf 90%.", coolDown: "300m ausschwimmen"),
     
-    HardSwimTrainings(warmUp: "7000m einschwimmen", main: "20x 1000m Sprints", coolDown: "7000m ausschwimmen")
+    HardSwimTrainings(warmUp: "400 einschwimmen und 4x25 kurze Sprints.", main: "3x Pyramide: 50m - 100m - 200m - 400m - 800m - 400m - 200m - 100m - 50m. Für Langdistanzler: Die 800m mit Paddles", coolDown: "400m ausschwimmen")
 
 
 ]

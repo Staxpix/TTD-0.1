@@ -10,7 +10,7 @@ import SwiftUI
 struct RandomBikeView: View {
     
     // Array für Auswahl im Picker
-    let auswahlBike : [String] = ["Technik", "Sprints", "Ausdauer"]
+    let auswahlBike : [String] = ["Spots", "Sprints", "Race"]
     
     // Variable "Selection" im Picker für "Run"
     @State private var selectedBike = 1
@@ -66,7 +66,7 @@ struct RandomBikeView: View {
                 
                 Button(action: {
                     
-                    if selectedFromPicker == "Technik" {
+                    if selectedFromPicker == "Spots" {
                         let temRanNum = tempRandomNumberBikeEasy()
                         randomBikeTempWarmUp = "\(allEasyBikes[temRanNum].warmUp)"
                         randomBikeTempMain = "\(allEasyBikes[temRanNum].main)"
@@ -77,7 +77,7 @@ struct RandomBikeView: View {
                         randomBikeTempWarmUp = "\(allMediumBikes[temRanNum].warmUp)"
                         randomBikeTempMain = "\(allMediumBikes[temRanNum].main)"
                         randomBikeTempCoolDown = "\(allMediumBikes[temRanNum].coolDown)"
-                    } else if selectedFromPicker == "Ausdauer" {
+                    } else if selectedFromPicker == "Race" {
                         let temRanNum = tempRandomNumberBikeHard()
                         randomBikeTempWarmUp = "\(allHardBikes[temRanNum].warmUp)"
                         randomBikeTempMain = "\(allHardBikes[temRanNum].main)"
@@ -157,7 +157,7 @@ struct RandomBikeView: View {
                     .padding(.bottom, 20)
                 
                 DisclosureGroup(
-                    content: { Text("ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent")
+                    content: { Text("Die %-Werte beziehen sich hier auf euren FTP-Wert. Wer den noch nie berechnet hat. Am besten auf der Rolle. Einfahren und dann 20 Minuten all out. Den Watt-Schnitt dieser 20 Minuten x 0.95 = Euer FTP-Wert.")
                         .font(.footnote)
                         .padding()
                     },

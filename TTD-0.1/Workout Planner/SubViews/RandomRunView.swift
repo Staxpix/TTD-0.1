@@ -170,7 +170,7 @@ struct RandomRunView: View {
                     .padding(.bottom, 10)
                 
                 DisclosureGroup(
-                    content: { Text("Bei Easy-Läufen ist es wirklich wichtig, dass sie 'Easy' sind. Vor allem an Steigungen sollte man aufpassen (am besten vermeiden!), generell eher langsamer laufen, als man vielleicht könnte. Die Regeneration steht hier im Vordergrund. Gerne ein bisschen Technik oder Stabi einbauen.")
+                    content: { Text("Bei Easy-Läufen ist es wirklich wichtig, dass sie 'Easy' sind. Vor allem an Steigungen sollte man aufpassen (am besten vermeiden!), generell eher langsamer laufen, als man vielleicht könnte. Die Regeneration steht hier im Vordergrund. Gerne ein bisschen Technik oder Stabi einbauen. Die %-Angaben in den Trainings beziehen sich immer auf euer maximales Tempo, das ihr über 1km halten könnt. Die Angaben sind immer Richtwerte. An guten Tagen legt man ein paar % drauf. An schlecht entsprechend weniger oder verkürzt die Einheiten. Das eigene Gefühl steht über jedem Trainingsplan :-)")
                         .font(.footnote)
                         .padding()
                     },

@@ -157,7 +157,7 @@ struct RandomSwimView: View {
                     .padding(.bottom, 20)
                 
                 DisclosureGroup(
-                    content: { Text("ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent")
+                    content: { Text("Die %-Angaben in den Trainings beziehen sich immer auf euer maximales Tempo, das auf 100m schwimmen könnt. Am besten alle paar Wochen einmal testen :-). Die Angaben sind immer Richtwerte. An guten Tagen legt man ein paar % drauf. An schlecht entsprechend weniger oder verkürzt die Einheiten. Das eigene Gefühl steht über jedem Trainingsplan :-)")
                         .font(.footnote)
                         .padding()
                     },

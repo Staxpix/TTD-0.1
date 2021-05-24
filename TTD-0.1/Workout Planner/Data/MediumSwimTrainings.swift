@@ -26,11 +26,11 @@ struct IntensityMediumSwimTrainings {
 
 var allMediumSwims : [MediumSwimTrainings] = [
 
-MediumSwimTrainings(warmUp: "500m einschwimmen", main: "10x 100m Sprints", coolDown: "500m ausschwimmen"),
+MediumSwimTrainings(warmUp: "400m nach Belieben einschwimmen. Lagen wechseln, kein Kraul.", main: "10x 100m Sprints @ 100 - 110%. Max. Sekunden Pause. Quält euch!", coolDown: "500m ausschwimmen"),
     
-MediumSwimTrainings(warmUp: "600m einschwimmen", main: "15x 100m Sprints", coolDown: "600m ausschwimmen"),
+MediumSwimTrainings(warmUp: "Lockeres Einschwimmen mit mind. 6x 50m Technikübungen.", main: "Wichtig: nach jeder Bahn max. 5 Sekunden Pause: 16x 25m Sprint @ 95% - 1 Bahn locker nach Belieben - 12x 25m Sprint @ 95% - 1 Bahn locker nach Belieben - 8x 25m Sprint @ 95% - 1 Bahn locker nach Belieben - 4x 25m Sprint @ 95% - 1 Bahn locker nach Belieben -", coolDown: "200m ausschwimmen"),
     
-MediumSwimTrainings(warmUp: "700m einschwimmen", main: "20x 100m Sprints", coolDown: "700m ausschwimmen")
+MediumSwimTrainings(warmUp: "600m Technik mit Kraul-Abschlag, Ente & Beine.", main: "Paddles an. 8x 50m @100 % - 4x 100m @ 90% - 2x 400m @85%, jede 4. Bahn anziehen.", coolDown: "400m Lagen ausschwimmen")
 
 
 ]

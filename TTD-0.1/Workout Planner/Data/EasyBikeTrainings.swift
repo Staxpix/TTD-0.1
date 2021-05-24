@@ -26,11 +26,23 @@ struct IntensityEasyBikeTrainings {
 
 var allEasyBikes : [EasyBikeTrainings] = [
 
-EasyBikeTrainings(warmUp: "Bike200m einschwimmen", main: "10x 50m Sprints", coolDown: "200m ausschwimmen"),
+EasyBikeTrainings(warmUp: "", main: "Ausfahrt zur Allrather Höhe", coolDown: ""),
     
-EasyBikeTrainings(warmUp: "Bike300m einschwimmen", main: "15x 50m Sprints", coolDown: "300m ausschwimmen"),
+    EasyBikeTrainings(warmUp: "", main: "Ausfahrt zur L361", coolDown: ""),
     
-EasyBikeTrainings(warmUp: "Bike400m einschwimmen", main: "20x 50 Sprints", coolDown: "400m ausschwimmen")
+    EasyBikeTrainings(warmUp: "", main: "Ausfahrt zum Sender Langenberg", coolDown: ""),
+    
+    EasyBikeTrainings(warmUp: "", main: "Ausfahrt zum Hamsterrad Krefeld + Rhein-Runde", coolDown: ""),
+    
+    EasyBikeTrainings(warmUp: "", main: "Ausfahrt zum Angerbachtal", coolDown: ""),
+    
+    EasyBikeTrainings(warmUp: "", main: "Ausfahrt zu den Jüchener Wellen", coolDown: ""),
+    
+    EasyBikeTrainings(warmUp: "", main: "Ausfahrt zum Terra Nova Speedway", coolDown: "")
+    
+
+    
+
 
 
 ]

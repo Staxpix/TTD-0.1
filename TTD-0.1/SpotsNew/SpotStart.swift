@@ -34,3 +34,5 @@ struct SpotStart_Previews: PreviewProvider {
         SpotStart()
     }
 }
+
+//ForEach(spots.sorted {$1.id > $0.id})

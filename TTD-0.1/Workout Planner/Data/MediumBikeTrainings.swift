@@ -26,11 +26,13 @@ struct IntensityMediumBikeTrainings {
 
 var allMediumBikes : [MediumBikeTrainings] = [
 
-    MediumBikeTrainings(warmUp: "Bike200m einschwimmen", main: "10x 50m Sprints", coolDown: "200m ausschwimmen"),
+    MediumBikeTrainings(warmUp: "Locker zu einer wenig befahrenen Straße fahren, z.B. Hamsterrad Krefeld, Rotterdamer Straße oder L361", main: "10x 1 Minute @ 130%", coolDown: "Locker wieder nach Hause."),
     
-    MediumBikeTrainings(warmUp: "Bike300m einschwimmen", main: "15x 50m Sprints", coolDown: "300m ausschwimmen"),
+    MediumBikeTrainings(warmUp: "Locker zu einer wenig befahrenen Straße fahren, z.B. Hamsterrad Krefeld, Rotterdamer Straße oder L361", main: "On/Off: 40/20 Sekunden @ 140% / 70%. 3x6 Durchgänge. 12 Minuten GA-1 dazwischen.", coolDown: "Locker wieder nach Hause."),
     
-    MediumBikeTrainings(warmUp: "Bike400m einschwimmen", main: "20x 50 Sprints", coolDown: "400m ausschwimmen")
+    MediumBikeTrainings(warmUp: "Locker zu einer Steigung, z.B. Allrather Höhe oder Dorper weg. Weiter weg z.B. Sender Langenberg. Anstieg sollte 3-6 Minuten langes fahren ermöglichen.", main: "6x 2 Minuten Kraftausdauer, also sehr langsame Trittfrequenz @ 110%. Dann hart losprinten 30 - 60 Sekunden / all out. Umdrehen, locker runterrollen und wieder Go :-).", coolDown: "Locker wieder nach Hause.")
+    
+   
 
 
 ]

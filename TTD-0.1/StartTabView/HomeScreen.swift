@@ -47,7 +47,7 @@ struct HomeScreen: View {
             
             
             VStack(spacing: 60) {
-                Image("ttd-logo")
+                Image("placeholder-2")
                     .resizable()
                     .scaledToFit()
                     .frame(maxWidth: screenSize.width * 0.7)
@@ -57,6 +57,10 @@ struct HomeScreen: View {
                     )
                     .cornerRadius(25)
                     .clipShape(Circle())
+                    .rotation3DEffect(
+                                            .degrees(10),
+                                            axis: (x: -1.0, y: -1.0, z: 0.0)
+                                        )
                     .shadow(color: Color.gray.opacity(isVisible ? 0.3 : 0.0), radius: 10, x: 15, y: 10)
                     .shadow(color: Color.gray.opacity(isVisible ? 0.08 : 0.0), radius: 10, x: -15, y: -10)
                    
@@ -71,6 +75,10 @@ struct HomeScreen: View {
                     )
                     .cornerRadius(25)
                     .clipShape(RoundedRectangle(cornerRadius:25))
+                    .rotation3DEffect(
+                                            .degrees(10),
+                                            axis: (x: 1.0, y: 1.0, z: 0.0)
+                                        )
                     .shadow(color: Color.gray.opacity(isVisible ? 0.3 : 0.0), radius: 10, x: 15, y: 10)
                     .shadow(color: Color.gray.opacity(isVisible ? 0.08 : 0.0), radius: 10, x: -15, y: -10)
                 
