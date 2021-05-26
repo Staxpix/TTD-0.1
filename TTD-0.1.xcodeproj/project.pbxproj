@@ -85,6 +85,7 @@
 		78DC8B73264DA021004E37DE /* MediumRunTrainingsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DC8B72264DA021004E37DE /* MediumRunTrainingsData.swift */; };
 		78DC8B76264EB680004E37DE /* FAQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DC8B75264EB680004E37DE /* FAQ.swift */; };
 		78DC8B78264EBC9E004E37DE /* FAQDisGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DC8B77264EBC9E004E37DE /* FAQDisGroupView.swift */; };
+		78DFD3F3265E15740045F9A6 /* ArenaSportParkTrainingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DFD3F2265E15740045F9A6 /* ArenaSportParkTrainingView.swift */; };
 		78EABB05264ABF4800AF7268 /* ContentView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EABB04264ABF4800AF7268 /* ContentView2.swift */; };
 		78EABB09264B231600AF7268 /* SpotsImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EABB08264B231600AF7268 /* SpotsImageView.swift */; };
 		78EABB0B264BAA1D00AF7268 /* SpotInsetGallery2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EABB0A264BAA1D00AF7268 /* SpotInsetGallery2.swift */; };
@@ -176,6 +177,7 @@
 		78DC8B72264DA021004E37DE /* MediumRunTrainingsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumRunTrainingsData.swift; sourceTree = "<group>"; };
 		78DC8B75264EB680004E37DE /* FAQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQ.swift; sourceTree = "<group>"; };
 		78DC8B77264EBC9E004E37DE /* FAQDisGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQDisGroupView.swift; sourceTree = "<group>"; };
+		78DFD3F2265E15740045F9A6 /* ArenaSportParkTrainingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArenaSportParkTrainingView.swift; sourceTree = "<group>"; };
 		78EABAFE264ABF0500AF7268 /* ContentView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView2.swift; sourceTree = "<group>"; };
 		78EABB04264ABF4800AF7268 /* ContentView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView2.swift; path = ../Alt/ContentView2.swift; sourceTree = "<group>"; };
 		78EABB08264B231600AF7268 /* SpotsImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotsImageView.swift; sourceTree = "<group>"; };
@@ -424,6 +426,7 @@
 			children = (
 				782CDD462635BEC500AC53B1 /* RheinbadTrainingView.swift */,
 				782CDD492635BF6000AC53B1 /* THBTrainingView.swift */,
+				78DFD3F2265E15740045F9A6 /* ArenaSportParkTrainingView.swift */,
 			);
 			path = TrainingFlipMapCards;
 			sourceTree = "<group>";
@@ -567,6 +570,7 @@
 				78D6B0A126458B1D00CB3494 /* ViewModel.swift in Sources */,
 				78EABB0F264D6E7B00AF7268 /* HardRunTrainingsData.swift in Sources */,
 				7829D38B2621A5C3003BFE0A /* ContentView.swift in Sources */,
+				78DFD3F3265E15740045F9A6 /* ArenaSportParkTrainingView.swift in Sources */,
 				78C1B72C2631EA7500261AE7 /* SpotsListCell.swift in Sources */,
 				78BE7CE2262B475F00072218 /* NewsDetailView.swift in Sources */,
 				78EABB05264ABF4800AF7268 /* ContentView2.swift in Sources */,
